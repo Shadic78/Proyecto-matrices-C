@@ -92,6 +92,7 @@
       <ExceptionHandling Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">Async</ExceptionHandling>
     </ClCompile>
     <ClCompile Include="SegundoForm.cpp" />
+    <ClCompile Include="UIMatrixGenerator.cpp" />
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="MyForm.h">
@@ -100,6 +101,7 @@
     <ClInclude Include="SegundoForm.h">
       <FileType>CppForm</FileType>
     </ClInclude>
+    <ClInclude Include="UIMatrixGenerator.h" />
   </ItemGroup>
   <ItemGroup>
     <EmbeddedResource Include="MyForm.resx">

@@ -21,6 +21,9 @@
     <ClCompile Include="SegundoForm.cpp">
       <Filter>Archivos de código fuente</Filter>
     </ClCompile>
+    <ClCompile Include="UIMatrixGenerator.cpp">
+      <Filter>Archivos de código fuente</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="MyForm.h">
@@ -29,9 +32,15 @@
     <ClInclude Include="SegundoForm.h">
       <Filter>Archivos de encabezado</Filter>
     </ClInclude>
+    <ClInclude Include="UIMatrixGenerator.h">
+      <Filter>Archivos de encabezado</Filter>
+    </ClInclude>
   </ItemGroup>
   <ItemGroup>
     <EmbeddedResource Include="MyForm.resx">
+      <Filter>Archivos de recursos</Filter>
+    </EmbeddedResource>
+    <EmbeddedResource Include="SegundoForm.resx">
       <Filter>Archivos de recursos</Filter>
     </EmbeddedResource>
   </ItemGroup>
