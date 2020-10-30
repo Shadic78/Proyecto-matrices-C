@@ -194,7 +194,7 @@ namespace Prueba1 {
 
 				 int** matrix = readMatrixFromUI(matrixNumRows, matrixNumCols, "matrixA", ContainerMatrixA);
 
-				 // Imprimir la matriz
+				 // Imprimir la matriz en un label
 				 String^ output = "";
 				 for (int fila = 0; fila < matrixNumRows; fila++) {
 					 for (int columna = 0; columna < matrixNumCols; columna++) {

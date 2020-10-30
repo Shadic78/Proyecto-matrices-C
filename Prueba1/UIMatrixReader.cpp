@@ -3,7 +3,6 @@
 
 int** readMatrixFromUI(int matrixNumRows, int matrixNumCols, String^ identifier, GroupBox^ container) {
 	
-	// Declarar la matriz
 	int** matrix = createMatrix(matrixNumRows, matrixNumCols);
 
 	for (int row = 0; row < matrixNumRows; row++) {
