@@ -75,6 +75,7 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <ClCompile Include="MatrixGenerator.cpp" />
     <ClCompile Include="MyForm.cpp">
       <CompileAsManaged Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">true</CompileAsManaged>
       <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
@@ -93,8 +94,10 @@
     </ClCompile>
     <ClCompile Include="SegundoForm.cpp" />
     <ClCompile Include="UIMatrixGenerator.cpp" />
+    <ClCompile Include="UIMatrixReader.cpp" />
   </ItemGroup>
   <ItemGroup>
+    <ClInclude Include="MatrixGenerator.h" />
     <ClInclude Include="MyForm.h">
       <FileType>CppForm</FileType>
     </ClInclude>
@@ -102,6 +105,7 @@
       <FileType>CppForm</FileType>
     </ClInclude>
     <ClInclude Include="UIMatrixGenerator.h" />
+    <ClInclude Include="UIMatrixReader.h" />
   </ItemGroup>
   <ItemGroup>
     <EmbeddedResource Include="MyForm.resx">

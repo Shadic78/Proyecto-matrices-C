@@ -6,6 +6,8 @@
 
 void generateTextBoxMatrix(const int MATRIX_NUM_ROWS, const int MATRIX_NUM_COLS, String^ identifier, GroupBox^ container) {
 
+	container->Controls->Clear();
+
 	const int GAPS_TOTAL_WIDTH = (MATRIX_NUM_COLS + 1) * GAP_BETWEEN_COMPONENTS;
 	const int GAPS_TOTAL_HEIGHT = (MATRIX_NUM_ROWS + 1) * GAP_BETWEEN_COMPONENTS;
 
@@ -19,8 +21,6 @@ void generateTextBoxMatrix(const int MATRIX_NUM_ROWS, const int MATRIX_NUM_COLS,
 	int txtInputCoordY = INITIAL_COORD_Y;
 
 	TextBox^  txtInput;
-
-	container->Controls->Clear();
 
 	for (int row = 0; row < MATRIX_NUM_ROWS; row++) {
 		for (int column = 0; column < MATRIX_NUM_COLS; column++) {

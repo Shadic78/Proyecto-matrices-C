@@ -1,7 +1,8 @@
 #pragma once
-#include <string>
-#include <iostream>
+#include <string>;
+#include <iostream>;
 #include "UIMatrixGenerator.h";
+#include "UIMatrixReader.h";
 
 namespace Prueba1 {
 
@@ -188,51 +189,21 @@ namespace Prueba1 {
 	}
 
 	private: System::Void BtnLeerTextBox_Click(System::Object^  sender, System::EventArgs^  e) {
-				 /* Obtener el texto de un TextBox
-				 Control^ control = this->Controls->Find("TxtPrueba1", false)[0];
-				 TextBox^ textBox = (TextBox^) control;
-				 this->labelTextoLeido->Text = textBox->Text;*/
+				 const int matrixNumRows = Convert::ToInt32(TxtMatrixRows->Text);
+				 const int matrixNumCols = Convert::ToInt32(TxtMatrixCols->Text);
 
-				 /*const int MAX_TEXT_BOX = 4;
-				 int matriz[MAX_TEXT_BOX / 2][MAX_TEXT_BOX / 2];*/
-
-				 /*for (int textBoxIndex = 0; textBoxIndex < MAX_TEXT_BOX; textBoxIndex++) {
-					 Control^ control = ContainerMatrizA->Controls->Find("TxtPrueba" + textBoxIndex, false)[0];
-					 TextBox^ textBox = (TextBox^)control;
-					 String^ textoIngresado = textBox->Text;
-					 int value = Convert::ToInt32(textBox->Text);
-
-					 if (textBoxIndex < MAX_TEXT_BOX / 2) {
-						 matriz[0][textBoxIndex] = value;
-					 }
-					 else {
-						 matriz[1][textBoxIndex - 2] = value;
-					 }
-				 }*/
-
-				 /*for (int fila = 0; fila < (MAX_TEXT_BOX / 2); fila++) {
-					 for (int columna = 0; columna < (MAX_TEXT_BOX / 2); columna++) {
-						 Control^ control = ContainerMatrizA->Controls->Find("TxtPrueba" + fila + columna, false)[0];
-						 TextBox^ textBox = (TextBox^)control;
-						 String^ textoIngresado = textBox->Text;
-						 int value = Convert::ToInt32(textBox->Text);
-
-						 matriz[fila][columna] = value;
-					 }
-				 }*/
-										
+				 int** matrix = readMatrixFromUI(matrixNumRows, matrixNumCols, "matrixA", ContainerMatrixA);
 
 				 // Imprimir la matriz
-				 /*String^ output = "";
-				 for (int fila = 0; fila < MAX_TEXT_BOX / 2; fila++) {
-					 for (int columna = 0; columna < MAX_TEXT_BOX / 2; columna++) {
-						 std::cout << matriz[fila][columna] << "     " << std::endl;
-						 output += matriz[fila][columna] + "       ";
+				 String^ output = "";
+				 for (int fila = 0; fila < matrixNumRows; fila++) {
+					 for (int columna = 0; columna < matrixNumCols; columna++) {
+						 output += matrix[fila][columna] + "       ";
 					 }
 					 output += "\n";
 				 }
-				 this->labelTextoLeido->Text = output;*/
-
+				 this->labelTextoLeido->Text = output;
 	}
+
 };
 }
