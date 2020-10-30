@@ -43,7 +43,8 @@ namespace Prueba1 {
 
 
 	private: System::Windows::Forms::Label^  labelTextoLeido;
-	private: System::Windows::Forms::GroupBox^  ContainerMatrizA;
+	private: System::Windows::Forms::GroupBox^  ContainerMatrixA;
+
 	private: System::Windows::Forms::TextBox^  TxtMatrixRows;
 	private: System::Windows::Forms::Label^  label2;
 	private: System::Windows::Forms::Label^  label3;
@@ -72,7 +73,7 @@ namespace Prueba1 {
 			this->BtnGenerateMatrix = (gcnew System::Windows::Forms::Button());
 			this->BtnReadMatrix = (gcnew System::Windows::Forms::Button());
 			this->labelTextoLeido = (gcnew System::Windows::Forms::Label());
-			this->ContainerMatrizA = (gcnew System::Windows::Forms::GroupBox());
+			this->ContainerMatrixA = (gcnew System::Windows::Forms::GroupBox());
 			this->TxtMatrixRows = (gcnew System::Windows::Forms::TextBox());
 			this->label2 = (gcnew System::Windows::Forms::Label());
 			this->label3 = (gcnew System::Windows::Forms::Label());
@@ -117,14 +118,14 @@ namespace Prueba1 {
 			this->labelTextoLeido->TabIndex = 3;
 			this->labelTextoLeido->Text = L"Matriz leida";
 			// 
-			// ContainerMatrizA
+			// ContainerMatrixA
 			// 
-			this->ContainerMatrizA->Location = System::Drawing::Point(32, 95);
-			this->ContainerMatrizA->Name = L"ContainerMatrizA";
-			this->ContainerMatrizA->Size = System::Drawing::Size(260, 174);
-			this->ContainerMatrizA->TabIndex = 4;
-			this->ContainerMatrizA->TabStop = false;
-			this->ContainerMatrizA->Text = L"Matriz";
+			this->ContainerMatrixA->Location = System::Drawing::Point(32, 95);
+			this->ContainerMatrixA->Name = L"ContainerMatrixA";
+			this->ContainerMatrixA->Size = System::Drawing::Size(260, 174);
+			this->ContainerMatrixA->TabIndex = 4;
+			this->ContainerMatrixA->TabStop = false;
+			this->ContainerMatrixA->Text = L"MatrixA";
 			// 
 			// TxtMatrixRows
 			// 
@@ -167,7 +168,7 @@ namespace Prueba1 {
 			this->Controls->Add(this->label3);
 			this->Controls->Add(this->label2);
 			this->Controls->Add(this->TxtMatrixRows);
-			this->Controls->Add(this->ContainerMatrizA);
+			this->Controls->Add(this->ContainerMatrixA);
 			this->Controls->Add(this->labelTextoLeido);
 			this->Controls->Add(this->BtnReadMatrix);
 			this->Controls->Add(this->BtnGenerateMatrix);
@@ -180,7 +181,10 @@ namespace Prueba1 {
 		}
 #pragma endregion
 	private: System::Void BtnGenerar_Click(System::Object^  sender, System::EventArgs^  e) {
-				 generateTextBoxMatrix(4, 2, "matriz", ContainerMatrizA);
+				 const int matrixNumRows = Convert::ToInt32(TxtMatrixRows->Text);
+				 const int matrixNumCols = Convert::ToInt32(TxtMatrixCols->Text);
+
+				 generateTextBoxMatrix(matrixNumRows, matrixNumCols, "matrixA", ContainerMatrixA);
 	}
 
 	private: System::Void BtnLeerTextBox_Click(System::Object^  sender, System::EventArgs^  e) {
@@ -189,8 +193,8 @@ namespace Prueba1 {
 				 TextBox^ textBox = (TextBox^) control;
 				 this->labelTextoLeido->Text = textBox->Text;*/
 
-				 const int MAX_TEXT_BOX = 4;
-				 int matriz[MAX_TEXT_BOX / 2][MAX_TEXT_BOX / 2];
+				 /*const int MAX_TEXT_BOX = 4;
+				 int matriz[MAX_TEXT_BOX / 2][MAX_TEXT_BOX / 2];*/
 
 				 /*for (int textBoxIndex = 0; textBoxIndex < MAX_TEXT_BOX; textBoxIndex++) {
 					 Control^ control = ContainerMatrizA->Controls->Find("TxtPrueba" + textBoxIndex, false)[0];
@@ -206,7 +210,7 @@ namespace Prueba1 {
 					 }
 				 }*/
 
-				 for (int fila = 0; fila < (MAX_TEXT_BOX / 2); fila++) {
+				 /*for (int fila = 0; fila < (MAX_TEXT_BOX / 2); fila++) {
 					 for (int columna = 0; columna < (MAX_TEXT_BOX / 2); columna++) {
 						 Control^ control = ContainerMatrizA->Controls->Find("TxtPrueba" + fila + columna, false)[0];
 						 TextBox^ textBox = (TextBox^)control;
@@ -215,11 +219,11 @@ namespace Prueba1 {
 
 						 matriz[fila][columna] = value;
 					 }
-				 }
+				 }*/
 										
 
 				 // Imprimir la matriz
-				 String^ output = "";
+				 /*String^ output = "";
 				 for (int fila = 0; fila < MAX_TEXT_BOX / 2; fila++) {
 					 for (int columna = 0; columna < MAX_TEXT_BOX / 2; columna++) {
 						 std::cout << matriz[fila][columna] << "     " << std::endl;
@@ -227,7 +231,7 @@ namespace Prueba1 {
 					 }
 					 output += "\n";
 				 }
-				 this->labelTextoLeido->Text = output;
+				 this->labelTextoLeido->Text = output;*/
 
 	}
 };

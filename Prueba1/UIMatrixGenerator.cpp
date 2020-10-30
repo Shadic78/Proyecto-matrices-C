@@ -17,7 +17,10 @@ void generateTextBoxMatrix(const int MATRIX_NUM_ROWS, const int MATRIX_NUM_COLS,
 
 	int txtInputCoordX = INITIAL_COORD_X;
 	int txtInputCoordY = INITIAL_COORD_Y;
+
 	TextBox^  txtInput;
+
+	container->Controls->Clear();
 
 	for (int row = 0; row < MATRIX_NUM_ROWS; row++) {
 		for (int column = 0; column < MATRIX_NUM_COLS; column++) {
