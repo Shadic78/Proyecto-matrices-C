@@ -18,9 +18,6 @@
     <ClCompile Include="MyForm.cpp">
       <Filter>Archivos de código fuente</Filter>
     </ClCompile>
-    <ClCompile Include="SegundoForm.cpp">
-      <Filter>Archivos de código fuente</Filter>
-    </ClCompile>
     <ClCompile Include="UIMatrixGenerator.cpp">
       <Filter>Archivos de código fuente</Filter>
     </ClCompile>
@@ -30,12 +27,15 @@
     <ClCompile Include="MatrixGenerator.cpp">
       <Filter>Archivos de código fuente</Filter>
     </ClCompile>
+    <ClCompile Include="UIMatrixFiller.cpp">
+      <Filter>Archivos de código fuente</Filter>
+    </ClCompile>
+    <ClCompile Include="UIMatrixSum.cpp">
+      <Filter>Archivos de código fuente</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="MyForm.h">
-      <Filter>Archivos de encabezado</Filter>
-    </ClInclude>
-    <ClInclude Include="SegundoForm.h">
       <Filter>Archivos de encabezado</Filter>
     </ClInclude>
     <ClInclude Include="UIMatrixGenerator.h">
@@ -47,12 +47,18 @@
     <ClInclude Include="MatrixGenerator.h">
       <Filter>Archivos de encabezado</Filter>
     </ClInclude>
+    <ClInclude Include="UIMatrixFiller.h">
+      <Filter>Archivos de encabezado</Filter>
+    </ClInclude>
+    <ClInclude Include="UIMatrixSum.h">
+      <Filter>Archivos de encabezado</Filter>
+    </ClInclude>
   </ItemGroup>
   <ItemGroup>
     <EmbeddedResource Include="MyForm.resx">
       <Filter>Archivos de recursos</Filter>
     </EmbeddedResource>
-    <EmbeddedResource Include="SegundoForm.resx">
+    <EmbeddedResource Include="UIMatrixSum.resx">
       <Filter>Archivos de recursos</Filter>
     </EmbeddedResource>
   </ItemGroup>

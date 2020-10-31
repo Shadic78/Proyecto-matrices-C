@@ -93,7 +93,8 @@
       <DebugInformationFormat Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">ProgramDatabase</DebugInformationFormat>
       <ExceptionHandling Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">Async</ExceptionHandling>
     </ClCompile>
-    <ClCompile Include="SegundoForm.cpp" />
+    <ClCompile Include="UIMatrixSum.cpp" />
+    <ClCompile Include="UIMatrixFiller.cpp" />
     <ClCompile Include="UIMatrixGenerator.cpp" />
     <ClCompile Include="UIMatrixReader.cpp" />
   </ItemGroup>
@@ -102,9 +103,10 @@
     <ClInclude Include="MyForm.h">
       <FileType>CppForm</FileType>
     </ClInclude>
-    <ClInclude Include="SegundoForm.h">
+    <ClInclude Include="UIMatrixSum.h">
       <FileType>CppForm</FileType>
     </ClInclude>
+    <ClInclude Include="UIMatrixFiller.h" />
     <ClInclude Include="UIMatrixGenerator.h" />
     <ClInclude Include="UIMatrixReader.h" />
   </ItemGroup>
@@ -112,8 +114,8 @@
     <EmbeddedResource Include="MyForm.resx">
       <DependentUpon>MyForm.h</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="SegundoForm.resx">
-      <DependentUpon>SegundoForm.h</DependentUpon>
+    <EmbeddedResource Include="UIMatrixSum.resx">
+      <DependentUpon>UIMatrixSum.h</DependentUpon>
     </EmbeddedResource>
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />

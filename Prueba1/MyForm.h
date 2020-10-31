@@ -1,5 +1,5 @@
 #pragma once
-#include "SegundoForm.h"
+#include "UIMatrixSum.h"
 
 namespace Prueba1 {
 
