@@ -77,6 +77,7 @@
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="MatrixGenerator.cpp" />
+    <ClCompile Include="MatrixSum.cpp" />
     <ClCompile Include="MyForm.cpp">
       <CompileAsManaged Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">true</CompileAsManaged>
       <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
@@ -100,6 +101,7 @@
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="MatrixGenerator.h" />
+    <ClInclude Include="MatrixSum.h" />
     <ClInclude Include="MyForm.h">
       <FileType>CppForm</FileType>
     </ClInclude>

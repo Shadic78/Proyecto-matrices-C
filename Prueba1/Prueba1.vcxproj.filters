@@ -13,6 +13,12 @@
       <UniqueIdentifier>{67DA6AB6-F800-4c08-8B7A-83BB121AAD01}</UniqueIdentifier>
       <Extensions>rc;ico;cur;bmp;dlg;rc2;rct;bin;rgs;gif;jpg;jpeg;jpe;resx;tiff;tif;png;wav;mfcribbon-ms</Extensions>
     </Filter>
+    <Filter Include="Archivos de encabezado\Operations">
+      <UniqueIdentifier>{27e10907-9afc-4712-bb83-fda728b24aa4}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Archivos de código fuente\Operations">
+      <UniqueIdentifier>{1fb78730-f7c3-4cdd-a83b-258ba80c49e7}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="MyForm.cpp">
@@ -33,6 +39,9 @@
     <ClCompile Include="UIMatrixSum.cpp">
       <Filter>Archivos de código fuente</Filter>
     </ClCompile>
+    <ClCompile Include="MatrixSum.cpp">
+      <Filter>Archivos de código fuente\Operations</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="MyForm.h">
@@ -52,6 +61,9 @@
     </ClInclude>
     <ClInclude Include="UIMatrixSum.h">
       <Filter>Archivos de encabezado</Filter>
+    </ClInclude>
+    <ClInclude Include="MatrixSum.h">
+      <Filter>Archivos de encabezado\Operations</Filter>
     </ClInclude>
   </ItemGroup>
   <ItemGroup>

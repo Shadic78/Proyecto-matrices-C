@@ -4,6 +4,7 @@
 #include "UIMatrixGenerator.h";
 #include "UIMatrixReader.h";
 #include "UIMatrixFiller.h";
+#include "MatrixSum.h";
 
 namespace Prueba1 {
 
@@ -245,10 +246,10 @@ namespace Prueba1 {
 				 int** matrixB = readMatrixFromUI(matrixNumRows, matrixNumCols, "matrixB", ContainerMatrixB);
 
 				 // Hacer las operaciones
-				 //int** matrixResult = MatrixSum(matrixA, matrixB);
+				 int** matrixResult = matrixSum(matrixA, matrixB, matrixNumRows, matrixNumCols);
 
 				 // Rellenar la matrix de resultado
-				 fillTextBoxMatrix(matrixNumRows, matrixNumCols, "matrixResult", ContainerMatrixResult, matrixA);
+				 fillTextBoxMatrix(matrixNumRows, matrixNumCols, "matrixResult", ContainerMatrixResult, matrixResult);
 	}
 
 };
