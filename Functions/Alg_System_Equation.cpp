@@ -51,7 +51,7 @@ t_vector resolveSystemEquation(t_matrix matrixToResolve, int numRows, int numCol
 
     }
 
-    destroyMatrix(matrixSolution, numRows, numCols);
+    destroyMatrix(matrixSolution, numRows);
     return solution;
 }
 
