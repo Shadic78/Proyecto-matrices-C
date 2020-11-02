@@ -30,9 +30,6 @@
     <ClCompile Include="UIMatrixReader.cpp">
       <Filter>Archivos de código fuente</Filter>
     </ClCompile>
-    <ClCompile Include="MatrixGenerator.cpp">
-      <Filter>Archivos de código fuente</Filter>
-    </ClCompile>
     <ClCompile Include="UIMatrixFiller.cpp">
       <Filter>Archivos de código fuente</Filter>
     </ClCompile>
@@ -41,6 +38,9 @@
     </ClCompile>
     <ClCompile Include="MatrixSum.cpp">
       <Filter>Archivos de código fuente\Operations</Filter>
+    </ClCompile>
+    <ClCompile Include="UTL_Matrix.cpp">
+      <Filter>Archivos de código fuente</Filter>
     </ClCompile>
   </ItemGroup>
   <ItemGroup>
@@ -53,9 +53,6 @@
     <ClInclude Include="UIMatrixReader.h">
       <Filter>Archivos de encabezado</Filter>
     </ClInclude>
-    <ClInclude Include="MatrixGenerator.h">
-      <Filter>Archivos de encabezado</Filter>
-    </ClInclude>
     <ClInclude Include="UIMatrixFiller.h">
       <Filter>Archivos de encabezado</Filter>
     </ClInclude>
@@ -64,6 +61,9 @@
     </ClInclude>
     <ClInclude Include="MatrixSum.h">
       <Filter>Archivos de encabezado\Operations</Filter>
+    </ClInclude>
+    <ClInclude Include="UTL_Matrix.h">
+      <Filter>Archivos de encabezado</Filter>
     </ClInclude>
   </ItemGroup>
   <ItemGroup>

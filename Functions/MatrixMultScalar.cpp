@@ -1,11 +1,11 @@
 //
 // Created by alerammoo on 01/11/2020.
 
-#include "MatrixGenerator.h"
+
 #include "MatrixMultscalar.h"
 
-int** multiplication(int** matrix[20][20], int matrixNumRows, int matrixNumColumns, int scalar){
-    int** matrixResult = createMatrix(matrixNumRows, matrixNumColumns);
+t_matrix multiplication(t_matrix matrix, int matrixNumRows, int matrixNumColumns, t_matrix_value scalar){
+    t_matrix matrixResult = createMatrix(matrixNumRows, matrixNumColumns);
 
     for(int rowsIndex = 0; rowsIndex<matrixNumRows; rowsIndex++){
         for(int columnsIndex = 0; columnsIndex<matrixNumColumns; columnsIndex++){

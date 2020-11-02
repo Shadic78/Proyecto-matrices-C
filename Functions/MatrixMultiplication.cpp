@@ -1,11 +1,11 @@
 //
 // Created by alerammoo on 01/11/2020.
 //
-#include "MatrixGenerator.h"
+
 #include "MatrixMultiplication.h"
 
-int** matrixMultiplication(int** matrixA, int** matrixB, int matrixNumRows, int matrixNumColumns) {
-    int** matrixResult = createMatrix(matrixNumRows, matrixNumColumns);
+t_matrix matrixMultiplication(t_matrix matrixA, t_matrix matrixB, int matrixNumRows, int matrixNumColumns) {
+    t_matrix matrixResult = createMatrix(matrixNumRows, matrixNumColumns);
 
     for (int rowIndex = 0; rowIndex < matrixNumRows; rowIndex++) {
         for (int columnIndex = 0; columnIndex < matrixNumColumnss; columnIndex++) {

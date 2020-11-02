@@ -1,9 +1,9 @@
 #include "UIMatrixReader.h";
-#include "MatrixGenerator.h";
+#include "UTL_Matrix.h";
 
-int** readMatrixFromUI(int matrixNumRows, int matrixNumCols, String^ identifier, GroupBox^ container) {
+t_matrix readMatrixFromUI(int matrixNumRows, int matrixNumCols, String^ identifier, GroupBox^ container) {
 	
-	int** matrix = createMatrix(matrixNumRows, matrixNumCols);
+	t_matrix matrix = createMatrix(matrixNumRows, matrixNumCols);
 
 	for (int row = 0; row < matrixNumRows; row++) {
 		for (int column = 0; column < matrixNumCols; column++) {
@@ -12,7 +12,7 @@ int** readMatrixFromUI(int matrixNumRows, int matrixNumCols, String^ identifier,
 			TextBox^ textBox = (TextBox^) control;
 
 			String^ textBoxStringData = textBox->Text;
-			int textBoxValue = Convert::ToInt32(textBoxStringData);
+			t_matrix_value textBoxValue = Convert::ToDouble(textBoxStringData);
 
 			matrix[row][column] = textBoxValue;
 		}

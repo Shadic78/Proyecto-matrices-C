@@ -76,7 +76,7 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <ClCompile Include="MatrixGenerator.cpp" />
+    <ClCompile Include="UTL_Matrix.cpp" />
     <ClCompile Include="MatrixSum.cpp" />
     <ClCompile Include="MyForm.cpp">
       <CompileAsManaged Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">true</CompileAsManaged>
@@ -100,7 +100,7 @@
     <ClCompile Include="UIMatrixReader.cpp" />
   </ItemGroup>
   <ItemGroup>
-    <ClInclude Include="MatrixGenerator.h" />
+    <ClInclude Include="UTL_Matrix.h" />
     <ClInclude Include="MatrixSum.h" />
     <ClInclude Include="MyForm.h">
       <FileType>CppForm</FileType>
