@@ -3,4 +3,4 @@
 //
 
 #include "UTL_Matrix.h"
-t_matrix transpose(int** matrixA, int matrixNumRows, int matrixNumColumns);
+t_matrix transpose(t_matrix matrixA, int matrixNumRows, int matrixNumColumns);
