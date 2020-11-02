@@ -1,3 +1,2 @@
-#include <stdlib.h> 
 
-int** createMatrix(int matrixNumRows, int matrixNumCols);
+int** createMatrix(const int MATRIX_NUM_ROWS, const int MATRIX_NUM_COLS);

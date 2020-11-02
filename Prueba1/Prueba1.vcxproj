@@ -77,7 +77,10 @@
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="MatrixGenerator.cpp" />
+    <ClCompile Include="MatrixMultiplication.cpp" />
+    <ClCompile Include="MatrixMultScalar.cpp" />
     <ClCompile Include="MatrixSum.cpp" />
+    <ClCompile Include="MatrixTranspose.cpp" />
     <ClCompile Include="MyForm.cpp">
       <CompileAsManaged Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">true</CompileAsManaged>
       <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
@@ -94,14 +97,16 @@
       <DebugInformationFormat Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">ProgramDatabase</DebugInformationFormat>
       <ExceptionHandling Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">Async</ExceptionHandling>
     </ClCompile>
-    <ClCompile Include="UIMatrixSum.cpp" />
     <ClCompile Include="UIMatrixFiller.cpp" />
     <ClCompile Include="UIMatrixGenerator.cpp" />
     <ClCompile Include="UIMatrixReader.cpp" />
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="MatrixGenerator.h" />
+    <ClInclude Include="MatrixMultiplication.h" />
+    <ClInclude Include="MatrixMultScalar.h" />
     <ClInclude Include="MatrixSum.h" />
+    <ClInclude Include="MatrixTranspose.h" />
     <ClInclude Include="MyForm.h">
       <FileType>CppForm</FileType>
     </ClInclude>

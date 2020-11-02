@@ -1,12 +1,12 @@
-#include "UIMatrixReader.h";
-#include "MatrixGenerator.h";
+#include "UIMatrixReader.h"
+#include "MatrixGenerator.h"
 
-int** readMatrixFromUI(int matrixNumRows, int matrixNumCols, String^ identifier, GroupBox^ container) {
+int** readMatrixFromUI(const int MATRIX_NUM_ROWS, const int MATRIX_NUM_COLS, String^ identifier, GroupBox^ container) {
 	
-	int** matrix = createMatrix(matrixNumRows, matrixNumCols);
+	int** matrix = createMatrix(MATRIX_NUM_ROWS, MATRIX_NUM_COLS);
 
-	for (int row = 0; row < matrixNumRows; row++) {
-		for (int column = 0; column < matrixNumCols; column++) {
+	for (int row = 0; row < MATRIX_NUM_ROWS; row++) {
+		for (int column = 0; column < MATRIX_NUM_COLS; column++) {
 			String^ txtIdentifier = identifier + row + column;
 			Control^ control = container->Controls->Find(txtIdentifier, false)[0];
 			TextBox^ textBox = (TextBox^) control;

@@ -81,7 +81,6 @@ namespace Prueba1 {
 		}
 #pragma endregion
 	private: System::Void button1_Click(System::Object^  sender, System::EventArgs^  e) {
-				 //BtnHelloWorld->Visible = false;
 				 SegundoForm ^ form2 = gcnew SegundoForm;
 				 this->Hide();
 				 form2->ShowDialog();

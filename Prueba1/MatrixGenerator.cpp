@@ -1,10 +1,10 @@
-#include <stdlib.h> 
+#include <stdlib.h>
 
-int** createMatrix(int matrixNumRows, int matrixNumCols) {
-	int** matrix = (int**) malloc(matrixNumRows * sizeof(int*));
+int** createMatrix(const int MATRIX_NUM_ROWS, const int MATRIX_NUM_COLS) {
+	int** matrix = (int**)malloc(MATRIX_NUM_ROWS * sizeof(int*));
 
-	for (int i = 0; i < matrixNumRows; i++) {
-		matrix[i] = (int *)malloc(matrixNumCols * sizeof(int));
+	for (int index = 0; index < MATRIX_NUM_ROWS; index++) {
+		matrix[index] = (int *)malloc(MATRIX_NUM_COLS * sizeof(int));
 	}
 
 	return matrix;

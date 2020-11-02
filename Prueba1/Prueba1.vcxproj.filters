@@ -36,10 +36,16 @@
     <ClCompile Include="UIMatrixFiller.cpp">
       <Filter>Archivos de código fuente</Filter>
     </ClCompile>
-    <ClCompile Include="UIMatrixSum.cpp">
-      <Filter>Archivos de código fuente</Filter>
-    </ClCompile>
     <ClCompile Include="MatrixSum.cpp">
+      <Filter>Archivos de código fuente\Operations</Filter>
+    </ClCompile>
+    <ClCompile Include="MatrixMultiplication.cpp">
+      <Filter>Archivos de código fuente\Operations</Filter>
+    </ClCompile>
+    <ClCompile Include="MatrixMultScalar.cpp">
+      <Filter>Archivos de código fuente\Operations</Filter>
+    </ClCompile>
+    <ClCompile Include="MatrixTranspose.cpp">
       <Filter>Archivos de código fuente\Operations</Filter>
     </ClCompile>
   </ItemGroup>
@@ -63,6 +69,15 @@
       <Filter>Archivos de encabezado</Filter>
     </ClInclude>
     <ClInclude Include="MatrixSum.h">
+      <Filter>Archivos de encabezado\Operations</Filter>
+    </ClInclude>
+    <ClInclude Include="MatrixMultiplication.h">
+      <Filter>Archivos de encabezado\Operations</Filter>
+    </ClInclude>
+    <ClInclude Include="MatrixMultScalar.h">
+      <Filter>Archivos de encabezado\Operations</Filter>
+    </ClInclude>
+    <ClInclude Include="MatrixTranspose.h">
       <Filter>Archivos de encabezado\Operations</Filter>
     </ClInclude>
   </ItemGroup>

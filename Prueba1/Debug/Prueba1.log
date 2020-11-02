@@ -1,15 +1,17 @@
-﻿Compilación iniciada a las 01/11/2020 08:34:25 a. m..
-     1>Proyecto "C:\Users\Equipo1\Documents\Visual Studio 2013\Projects\Prueba1\Prueba1\Prueba1.vcxproj" en el nodo 2 (Build destinos).
+﻿Compilación iniciada a las 01/11/2020 06:41:23 p. m..
+     1>Proyecto "C:\Users\Equipo1\Documents\Visual Studio 2013\Projects\Prueba1\Prueba1\Prueba1.vcxproj" en el nodo 2 (Rebuild destinos).
      1>C:\Program Files (x86)\MSBuild\Microsoft.Cpp\v4.0\V120\Microsoft.CppBuild.targets(381,5): warning MSB8028: The intermediate directory (Debug\) contains files shared from another project (ProyectoMatrices.vcxproj).  This can lead to incorrect clean and rebuild behavior.
      1>ClCompile:
-         C:\Program Files (x86)\Microsoft Visual Studio 12.0\VC\bin\CL.exe /c /AI"C:\Program Files (x86)\Reference Assemblies\Microsoft\Framework\.NETFramework\v4.0" /AI"C:\Program Files (x86)\Windows Kits\8.1\References\CommonConfiguration\Neutral" /Zi /clr /nologo /W3 /WX- /sdl /Od /Oy- /D _MBCS /EHa /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Fo"Debug\\" /Fd"Debug\vc120.pdb" /TP /FU"C:\Program Files (x86)\Reference Assemblies\Microsoft\Framework\.NETFramework\v4.0\mscorlib.dll" /FU"C:\Program Files (x86)\Reference Assemblies\Microsoft\Framework\.NETFramework\v4.0\System.Data.dll" /FU"C:\Program Files (x86)\Reference Assemblies\Microsoft\Framework\.NETFramework\v4.0\System.dll" /FU"C:\Program Files (x86)\Reference Assemblies\Microsoft\Framework\.NETFramework\v4.0\System.Drawing.dll" /FU"C:\Program Files (x86)\Reference Assemblies\Microsoft\Framework\.NETFramework\v4.0\System.Windows.Forms.dll" /FU"C:\Program Files (x86)\Reference Assemblies\Microsoft\Framework\.NETFramework\v4.0\System.Xml.dll" /analyze- /errorReport:prompt /clr:nostdlib UIMatrixSum.cpp
-         UIMatrixSum.cpp
-     1>c:\users\equipo1\documents\visual studio 2013\projects\prueba1\prueba1\UIMatrixSum.h(2): warning C4067: símbolos (token) inesperados después de la directiva del preprocesador; se esperaba una nueva línea
-     1>c:\users\equipo1\documents\visual studio 2013\projects\prueba1\prueba1\UIMatrixSum.h(3): warning C4067: símbolos (token) inesperados después de la directiva del preprocesador; se esperaba una nueva línea
-     1>c:\users\equipo1\documents\visual studio 2013\projects\prueba1\prueba1\UIMatrixSum.h(4): warning C4067: símbolos (token) inesperados después de la directiva del preprocesador; se esperaba una nueva línea
-     1>c:\users\equipo1\documents\visual studio 2013\projects\prueba1\prueba1\UIMatrixSum.h(5): warning C4067: símbolos (token) inesperados después de la directiva del preprocesador; se esperaba una nueva línea
-     1>c:\users\equipo1\documents\visual studio 2013\projects\prueba1\prueba1\UIMatrixSum.h(6): warning C4067: símbolos (token) inesperados después de la directiva del preprocesador; se esperaba una nueva línea
-     1>c:\users\equipo1\documents\visual studio 2013\projects\prueba1\prueba1\UIMatrixSum.h(7): warning C4067: símbolos (token) inesperados después de la directiva del preprocesador; se esperaba una nueva línea
+         C:\Program Files (x86)\Microsoft Visual Studio 12.0\VC\bin\CL.exe /c /AI"C:\Program Files (x86)\Reference Assemblies\Microsoft\Framework\.NETFramework\v4.0" /AI"C:\Program Files (x86)\Windows Kits\8.1\References\CommonConfiguration\Neutral" /Zi /clr /nologo /W3 /WX- /sdl /Od /Oy- /D _MBCS /EHa /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Fo"Debug\\" /Fd"Debug\vc120.pdb" /TP /FU"C:\Program Files (x86)\Reference Assemblies\Microsoft\Framework\.NETFramework\v4.0\mscorlib.dll" /FU"C:\Program Files (x86)\Reference Assemblies\Microsoft\Framework\.NETFramework\v4.0\System.Data.dll" /FU"C:\Program Files (x86)\Reference Assemblies\Microsoft\Framework\.NETFramework\v4.0\System.dll" /FU"C:\Program Files (x86)\Reference Assemblies\Microsoft\Framework\.NETFramework\v4.0\System.Drawing.dll" /FU"C:\Program Files (x86)\Reference Assemblies\Microsoft\Framework\.NETFramework\v4.0\System.Windows.Forms.dll" /FU"C:\Program Files (x86)\Reference Assemblies\Microsoft\Framework\.NETFramework\v4.0\System.Xml.dll" /analyze- /errorReport:prompt /clr:nostdlib MatrixGenerator.cpp MatrixMultiplication.cpp MatrixMultScalar.cpp MatrixSum.cpp MatrixTranspose.cpp UIMatrixFiller.cpp UIMatrixGenerator.cpp UIMatrixReader.cpp
+         MatrixGenerator.cpp
+         MatrixMultiplication.cpp
+         MatrixMultScalar.cpp
+         MatrixSum.cpp
+         MatrixTranspose.cpp
+         UIMatrixFiller.cpp
+         UIMatrixGenerator.cpp
+         UIMatrixReader.cpp
+         Generando código...
          C:\Program Files (x86)\Microsoft Visual Studio 12.0\VC\bin\CL.exe /c /AI"C:\Program Files (x86)\Reference Assemblies\Microsoft\Framework\.NETFramework\v4.0" /AI"C:\Program Files (x86)\Windows Kits\8.1\References\CommonConfiguration\Neutral" /Zi /clr /nologo /W3 /WX- /sdl /Od /Oy- /D _MBCS /Gm- /EHa /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Fo"Debug\\" /Fd"Debug\vc120.pdb" /TP /FU"C:\Program Files (x86)\Reference Assemblies\Microsoft\Framework\.NETFramework\v4.0\mscorlib.dll" /FU"C:\Program Files (x86)\Reference Assemblies\Microsoft\Framework\.NETFramework\v4.0\System.Data.dll" /FU"C:\Program Files (x86)\Reference Assemblies\Microsoft\Framework\.NETFramework\v4.0\System.dll" /FU"C:\Program Files (x86)\Reference Assemblies\Microsoft\Framework\.NETFramework\v4.0\System.Drawing.dll" /FU"C:\Program Files (x86)\Reference Assemblies\Microsoft\Framework\.NETFramework\v4.0\System.Windows.Forms.dll" /FU"C:\Program Files (x86)\Reference Assemblies\Microsoft\Framework\.NETFramework\v4.0\System.Xml.dll" /analyze- /errorReport:prompt /clr:nostdlib MyForm.cpp
          MyForm.cpp
      1>c:\users\equipo1\documents\visual studio 2013\projects\prueba1\prueba1\UIMatrixSum.h(2): warning C4067: símbolos (token) inesperados después de la directiva del preprocesador; se esperaba una nueva línea
@@ -19,18 +21,22 @@
      1>c:\users\equipo1\documents\visual studio 2013\projects\prueba1\prueba1\UIMatrixSum.h(6): warning C4067: símbolos (token) inesperados después de la directiva del preprocesador; se esperaba una nueva línea
      1>c:\users\equipo1\documents\visual studio 2013\projects\prueba1\prueba1\UIMatrixSum.h(7): warning C4067: símbolos (token) inesperados después de la directiva del preprocesador; se esperaba una nueva línea
      1>MyForm.cpp(7): warning C4829: Parámetros posiblemente incorrectos para la función main. Utilice 'int main(Platform::Array<Platform::String^>^ argv)'
+         C:\Program Files (x86)\Microsoft Visual Studio 12.0\VC\bin\CL.exe /c /Zi /clr /nologo /W3 /WX- /sdl /Od /Oy- /D _MBCS /EHa /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Fo"Debug\\" /Fd"Debug\vc120.pdb" /TP /analyze- /errorReport:prompt "C:\Users\Equipo1\AppData\Local\Temp\.NETFramework,Version=v4.0.AssemblyAttributes.cpp"
+         .NETFramework,Version=v4.0.AssemblyAttributes.cpp
        Link:
          C:\Program Files (x86)\Microsoft Visual Studio 12.0\VC\bin\link.exe /ERRORREPORT:PROMPT /OUT:"C:\Users\Equipo1\Documents\Visual Studio 2013\Projects\Prueba1\Debug\Prueba1.exe" /INCREMENTAL /NOLOGO kernel32.lib user32.lib gdi32.lib winspool.lib comdlg32.lib advapi32.lib shell32.lib ole32.lib oleaut32.lib uuid.lib odbc32.lib odbccp32.lib /ASSEMBLYRESOURCE:Debug\Prueba1.MyForm.resources /ASSEMBLYRESOURCE:Debug\Prueba1.UIMatrixSum.resources /MANIFEST /MANIFESTUAC:"level='asInvoker' uiAccess='false'" /manifest:embed /DEBUG /PDB:"C:\Users\Equipo1\Documents\Visual Studio 2013\Projects\Prueba1\Debug\Prueba1.pdb" /ASSEMBLYDEBUG /SUBSYSTEM:WINDOWS /TLBID:1 /ENTRY:"main" /DYNAMICBASE /FIXED:NO /NXCOMPAT /MACHINE:X86 Debug\MatrixGenerator.obj
+         Debug\MatrixMultiplication.obj
+         Debug\MatrixMultScalar.obj
          Debug\MatrixSum.obj
+         Debug\MatrixTranspose.obj
          Debug\MyForm.obj
-         Debug\UIMatrixSum.obj
          Debug\UIMatrixFiller.obj
          Debug\UIMatrixGenerator.obj
          Debug\UIMatrixReader.obj
          "Debug\.NETFramework,Version=v4.0.AssemblyAttributes.obj"
          Prueba1.vcxproj -> C:\Users\Equipo1\Documents\Visual Studio 2013\Projects\Prueba1\Debug\Prueba1.exe
-     1>Compilación del proyecto terminada "C:\Users\Equipo1\Documents\Visual Studio 2013\Projects\Prueba1\Prueba1\Prueba1.vcxproj" (Build destinos).
+     1>Compilación del proyecto terminada "C:\Users\Equipo1\Documents\Visual Studio 2013\Projects\Prueba1\Prueba1\Prueba1.vcxproj" (Rebuild destinos).
 
 Compilación correcta.
 
-Tiempo transcurrido 00:00:02.06
+Tiempo transcurrido 00:00:02.94

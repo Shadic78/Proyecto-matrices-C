@@ -1,4 +1,4 @@
 using namespace System;
 using namespace System::Windows::Forms;
 
-void generateTextBoxMatrix(int matrixNumRows, int matrixNumCols, String^ identifier, GroupBox^ container);
+void generateTextBoxMatrix(const int MATRIX_NUM_ROWS, const int MATRIX_NUM_COLS, String^ identifier, GroupBox^ container);
