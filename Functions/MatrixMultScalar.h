@@ -3,4 +3,4 @@
 //
 #include "UTL_Matrix.h"
 
-t_matrix multiplication(t_matrix matrix, int matrixNumRows, int matrixNumColumns, int scalar);
+t_matrix multiplication(t_matrix matrix, int matrixNumRows, int matrixNumColumns, t_matrix_value scalar);
