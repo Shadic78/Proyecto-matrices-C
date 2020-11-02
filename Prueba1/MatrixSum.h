@@ -1,2 +1,3 @@
+#include "UTL_Matrix.h"
 
-int** matrixSum(int** matrixA, int** matrixB, const int MATRIX_NUM_ROWS, const int MATRIX_NUM_COLS);
+t_matrix matrixSum(t_matrix matrixA, t_matrix matrixB, int matrixNumRows, int matrixNumColumns);

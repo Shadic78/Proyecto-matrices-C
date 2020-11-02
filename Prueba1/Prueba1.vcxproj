@@ -76,12 +76,13 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <ClCompile Include="MatrixGenerator.cpp" />
+    <ClCompile Include="Alg_Inverse_Matrix.cpp" />
+    <ClCompile Include="Alg_System_Equation.cpp" />
     <ClCompile Include="MatrixMultiplication.cpp" />
     <ClCompile Include="MatrixMultScalar.cpp" />
     <ClCompile Include="MatrixSum.cpp" />
     <ClCompile Include="MatrixTranspose.cpp" />
-    <ClCompile Include="MyForm.cpp">
+    <ClCompile Include="Main.cpp">
       <CompileAsManaged Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">true</CompileAsManaged>
       <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
       </PrecompiledHeader>
@@ -100,14 +101,17 @@
     <ClCompile Include="UIMatrixFiller.cpp" />
     <ClCompile Include="UIMatrixGenerator.cpp" />
     <ClCompile Include="UIMatrixReader.cpp" />
+    <ClCompile Include="UTL_Matrix.cpp" />
+    <ClCompile Include="UTL_Vector.cpp" />
   </ItemGroup>
   <ItemGroup>
-    <ClInclude Include="MatrixGenerator.h" />
+    <ClInclude Include="Alg_Inverse_Matrix.h" />
+    <ClInclude Include="Alg_System_Equation.h" />
     <ClInclude Include="MatrixMultiplication.h" />
     <ClInclude Include="MatrixMultScalar.h" />
     <ClInclude Include="MatrixSum.h" />
     <ClInclude Include="MatrixTranspose.h" />
-    <ClInclude Include="MyForm.h">
+    <ClInclude Include="FormStartMenu.h">
       <FileType>CppForm</FileType>
     </ClInclude>
     <ClInclude Include="UIMatrixSum.h">
@@ -116,14 +120,19 @@
     <ClInclude Include="UIMatrixFiller.h" />
     <ClInclude Include="UIMatrixGenerator.h" />
     <ClInclude Include="UIMatrixReader.h" />
+    <ClInclude Include="UTL_Matrix.h" />
+    <ClInclude Include="UTL_Vector.h" />
   </ItemGroup>
   <ItemGroup>
-    <EmbeddedResource Include="MyForm.resx">
-      <DependentUpon>MyForm.h</DependentUpon>
+    <EmbeddedResource Include="FormStartMenu.resx">
+      <DependentUpon>FormStartMenu.h</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="UIMatrixSum.resx">
       <DependentUpon>UIMatrixSum.h</DependentUpon>
     </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="ClassDiagram.cd" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">

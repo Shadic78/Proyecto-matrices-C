@@ -1,11 +1,10 @@
 #include "MatrixSum.h"
-#include "MatrixGenerator.h"
 
-int** matrixSum(int** matrixA, int** matrixB, const int MATRIX_NUM_ROWS, const int MATRIX_NUM_COLS) {
-	int** matrixResult = createMatrix(MATRIX_NUM_ROWS, MATRIX_NUM_COLS);
+t_matrix matrixSum(t_matrix matrixA, t_matrix matrixB, int matrixNumRows, int matrixNumColumns) {
+	t_matrix matrixResult = createMatrix(matrixNumRows, matrixNumColumns);
 
-	for (int row = 0; row < MATRIX_NUM_ROWS; row++) {
-		for (int column = 0; column < MATRIX_NUM_COLS; column++) {
+	for (int row = 0; row < matrixNumRows; row++) {
+		for (int column = 0; column < matrixNumColumns; column++) {
 			matrixResult[row][column] = matrixA[row][column] + matrixB[row][column];
 		}
 	}

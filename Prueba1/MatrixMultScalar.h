@@ -1,4 +1,6 @@
 //
 // Created by alerammoo on 01/11/2020.
 //
-int** multiplication(int** matrix, const int MATRIX_NUM_ROWS, const int MATRIX_NUM_COLS, int scalar);
+#include "UTL_Matrix.h"
+
+t_matrix multiplication(t_matrix matrix, int matrixNumRows, int matrixNumColumns, t_matrix_value scalar);

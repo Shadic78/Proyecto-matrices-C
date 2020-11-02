@@ -1,4 +1,5 @@
+#include "UTL_Matrix.h"
 using namespace System;
 using namespace System::Windows::Forms;
 
-void fillTextBoxMatrix(const int MATRIX_NUM_ROWS, const int MATRIX_NUM_COLS, String^ identifier, GroupBox^ container, int** matrix);
+void fillTextBoxMatrix(int matrixNumRows, int matrixNumColumns, String^ identifier, GroupBox^ container, t_matrix matrix);

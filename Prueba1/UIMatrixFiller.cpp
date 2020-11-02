@@ -1,9 +1,9 @@
 #include "UIMatrixFiller.h"
 
-void fillTextBoxMatrix(const int MATRIX_NUM_ROWS, const int MATRIX_NUM_COLS, String^ identifier, GroupBox^ container, int** matrix) {
+void fillTextBoxMatrix(int matrixNumRows, int matrixNumColumns, String^ identifier, GroupBox^ container, t_matrix matrix) {
 
-	for (int row = 0; row < MATRIX_NUM_ROWS; row++) {
-		for (int column = 0; column < MATRIX_NUM_COLS; column++) {
+	for (int row = 0; row < matrixNumRows; row++) {
+		for (int column = 0; column < matrixNumColumns; column++) {
 			String^ txtIdentifier = identifier + row + column;
 			Control^ control = container->Controls->Find(txtIdentifier, false)[0];
 			TextBox^ textBox = (TextBox^)control;

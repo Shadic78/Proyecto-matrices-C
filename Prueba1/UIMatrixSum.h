@@ -1,10 +1,11 @@
 #pragma once
-#include <string>;
-#include <iostream>;
-#include "UIMatrixGenerator.h";
-#include "UIMatrixReader.h";
-#include "UIMatrixFiller.h";
-#include "MatrixSum.h";
+#include <string>
+#include <iostream>
+#include "UTL_Matrix.h"
+#include "UIMatrixGenerator.h"
+#include "UIMatrixReader.h"
+#include "UIMatrixFiller.h"
+#include "MatrixSum.h"
 
 namespace Prueba1 {
 
@@ -18,10 +19,10 @@ namespace Prueba1 {
 	/// <summary>
 	/// Resumen de SegundoForm
 	/// </summary>
-	public ref class SegundoForm : public System::Windows::Forms::Form
+	public ref class FormMatrixSum : public System::Windows::Forms::Form
 	{
 	public:
-		SegundoForm(void)
+		FormMatrixSum(void)
 		{
 			InitializeComponent();
 			//
@@ -33,7 +34,7 @@ namespace Prueba1 {
 		/// <summary>
 		/// Limpiar los recursos que se estén utilizando.
 		/// </summary>
-		~SegundoForm()
+		~FormMatrixSum()
 		{
 			if (components)
 			{
@@ -111,7 +112,7 @@ namespace Prueba1 {
 			this->BtnGenerateMatrix->TabIndex = 1;
 			this->BtnGenerateMatrix->Text = L"Generate Matrix";
 			this->BtnGenerateMatrix->UseVisualStyleBackColor = true;
-			this->BtnGenerateMatrix->Click += gcnew System::EventHandler(this, &SegundoForm::BtnGenerar_Click);
+			this->BtnGenerateMatrix->Click += gcnew System::EventHandler(this, &FormMatrixSum::BtnGenerar_Click);
 			// 
 			// BtnCalculate
 			// 
@@ -121,7 +122,7 @@ namespace Prueba1 {
 			this->BtnCalculate->TabIndex = 2;
 			this->BtnCalculate->Text = L"Calculate";
 			this->BtnCalculate->UseVisualStyleBackColor = true;
-			this->BtnCalculate->Click += gcnew System::EventHandler(this, &SegundoForm::BtnLeerTextBox_Click);
+			this->BtnCalculate->Click += gcnew System::EventHandler(this, &FormMatrixSum::BtnLeerTextBox_Click);
 			// 
 			// ContainerMatrixA
 			// 
@@ -222,7 +223,7 @@ namespace Prueba1 {
 			this->Controls->Add(this->BtnGenerateMatrix);
 			this->Controls->Add(this->label1);
 			this->Name = L"SegundoForm";
-			this->Text = L"SegundoForm";
+			this->Text = L"Matrix sum";
 			this->ResumeLayout(false);
 			this->PerformLayout();
 
@@ -242,11 +243,11 @@ namespace Prueba1 {
 				 const int matrixNumCols = Convert::ToInt32(TxtMatrixCols->Text);
 
 				 // Leer las dos matrices de entrada
-				 int** matrixA = readMatrixFromUI(matrixNumRows, matrixNumCols, "matrixA", ContainerMatrixA);
-				 int** matrixB = readMatrixFromUI(matrixNumRows, matrixNumCols, "matrixB", ContainerMatrixB);
+				 t_matrix matrixA = readMatrixFromUI(matrixNumRows, matrixNumCols, "matrixA", ContainerMatrixA);
+				 t_matrix matrixB = readMatrixFromUI(matrixNumRows, matrixNumCols, "matrixB", ContainerMatrixB);
 
 				 // Hacer las operaciones
-				 int** matrixResult = matrixSum(matrixA, matrixB, matrixNumRows, matrixNumCols);
+				 t_matrix matrixResult = matrixSum(matrixA, matrixB, matrixNumRows, matrixNumCols);
 
 				 // Rellenar la matrix de resultado
 				 fillTextBoxMatrix(matrixNumRows, matrixNumCols, "matrixResult", ContainerMatrixResult, matrixResult);
