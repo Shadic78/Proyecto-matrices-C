@@ -252,7 +252,6 @@ namespace Prueba1 {
 
 				 UI_matrixGenerator(matrixNumRows, matrixNumCols, "matrixA", ContainerMatrixA);
 				 UI_matrixGenerator(matrixNumRows, matrixNumCols, "matrixB", ContainerMatrixB);
-				 UI_matrixGenerator(matrixNumRows, matrixNumCols, "matrixResult", ContainerMatrixResult);
 	}
 
 	private: System::Void BtnLeerTextBox_Click(System::Object^  sender, System::EventArgs^  e) {
@@ -264,6 +263,7 @@ namespace Prueba1 {
 
 				 t_matrix matrixResult = Alg_matrixSum(matrixA, matrixB, matrixNumRows, matrixNumCols);
 
+				 UI_matrixGenerator(matrixNumRows, matrixNumCols, "matrixResult", ContainerMatrixResult);
 				 UI_matrixFiller(matrixResult, matrixNumRows, matrixNumCols, "matrixResult", ContainerMatrixResult);
 	}
 

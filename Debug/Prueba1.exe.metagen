@@ -1,5 +1,6 @@
   Prueba1.Form_MatrixMultiplication.resources - Embedded, ContainedInManifestFile, 
   Prueba1.Form_MatrixScalar.resources - Embedded, ContainedInManifestFile, 
+  Prueba1.Form_MatrixTranspose.resources - Embedded, ContainedInManifestFile, 
   Prueba1.Form_StartMenu.resources - Embedded, ContainedInManifestFile, 
   Prueba1.Form_MatrixSum.resources - Embedded, ContainedInManifestFile, 
 ImageRuntimeVersion: v4.0.30319
@@ -21,6 +22,9 @@ Class Prueba1.Form_MatrixMultiplication: AutoLayout, AnsiClass, Class, Public, B
   :System.Windows.Forms.Form
     Void .ctor(): PrivateScope, Public, HideBySig, SpecialName, RTSpecialName
 Class Prueba1.Form_MatrixScalar: AutoLayout, AnsiClass, Class, Public, BeforeFieldInit
+  :System.Windows.Forms.Form
+    Void .ctor(): PrivateScope, Public, HideBySig, SpecialName, RTSpecialName
+Class Prueba1.Form_MatrixTranspose: AutoLayout, AnsiClass, Class, Public, BeforeFieldInit
   :System.Windows.Forms.Form
     Void .ctor(): PrivateScope, Public, HideBySig, SpecialName, RTSpecialName
 Class Prueba1.Form_MatrixSum: AutoLayout, AnsiClass, Class, Public, BeforeFieldInit

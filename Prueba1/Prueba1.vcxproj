@@ -84,6 +84,7 @@
     <ClCompile Include="Alg_ResolveSystemEquation.cpp" />
     <ClCompile Include="Form_MatrixMultiplication.cpp" />
     <ClCompile Include="Form_MatrixScalar.cpp" />
+    <ClCompile Include="Form_MatrixTranspose.cpp" />
     <ClCompile Include="Main.cpp">
       <CompileAsManaged Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">true</CompileAsManaged>
       <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
@@ -119,6 +120,9 @@
     <ClInclude Include="Form_MatrixScalar.h">
       <FileType>CppForm</FileType>
     </ClInclude>
+    <ClInclude Include="Form_MatrixTranspose.h">
+      <FileType>CppForm</FileType>
+    </ClInclude>
     <ClInclude Include="Form_StartMenu.h">
       <FileType>CppForm</FileType>
     </ClInclude>
@@ -137,6 +141,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Form_MatrixScalar.resx">
       <DependentUpon>Form_MatrixScalar.h</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form_MatrixTranspose.resx">
+      <DependentUpon>Form_MatrixTranspose.h</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Form_StartMenu.resx">
       <DependentUpon>Form_StartMenu.h</DependentUpon>

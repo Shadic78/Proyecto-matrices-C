@@ -259,7 +259,6 @@ namespace Prueba1 {
 				 matrixNumCols = Convert::ToInt32(TxtMatrixCols->Text);
 
 				 UI_matrixGenerator(matrixNumRows, matrixNumCols, "matrix", ContainerMatrix);
-				 UI_matrixGenerator(matrixNumRows, matrixNumCols, "matrixResult", ContainerMatrixResult);
 	}
 	private: System::Void BtnCalculate_Click(System::Object^  sender, System::EventArgs^  e) {
 				 const double scalar = Convert::ToDouble(TxtMatrixScalar->Text);
@@ -267,6 +266,7 @@ namespace Prueba1 {
 
 				 t_matrix matrixResult = Alg_matrixMultScalar(matrix, matrixNumRows, matrixNumCols, scalar);
 
+				 UI_matrixGenerator(matrixNumRows, matrixNumCols, "matrixResult", ContainerMatrixResult);
 				 UI_matrixFiller(matrixResult, matrixNumRows, matrixNumCols, "matrixResult", ContainerMatrixResult);
 	}
 };

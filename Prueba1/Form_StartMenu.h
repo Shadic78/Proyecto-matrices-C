@@ -2,6 +2,7 @@
 #include "Form_MatrixSum.h"
 #include "Form_MatrixScalar.h"
 #include "Form_MatrixMultiplication.h"
+#include "Form_MatrixTranspose.h"
 
 namespace Prueba1 {
 
@@ -122,6 +123,7 @@ namespace Prueba1 {
 			this->BtnTranspose->TabIndex = 5;
 			this->BtnTranspose->Text = L"Matrix transpose";
 			this->BtnTranspose->UseVisualStyleBackColor = true;
+			this->BtnTranspose->Click += gcnew System::EventHandler(this, &FormStartMenu::BtnTranspose_Click);
 			// 
 			// BtnInverse
 			// 
@@ -186,6 +188,12 @@ namespace Prueba1 {
 				 Form_MatrixMultiplication^ formMatrixMultiplication = gcnew Form_MatrixMultiplication;
 				 this->Hide();
 				 formMatrixMultiplication->ShowDialog();
+				 this->Show();
+	}
+	private: System::Void BtnTranspose_Click(System::Object^  sender, System::EventArgs^  e) {
+				 Form_MatrixTranspose^ formMatrixTranspose = gcnew Form_MatrixTranspose;
+				 this->Hide();
+				 formMatrixTranspose->ShowDialog();
 				 this->Show();
 	}
 };
