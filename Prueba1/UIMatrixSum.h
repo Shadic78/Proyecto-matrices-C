@@ -5,7 +5,7 @@
 #include "UIMatrixGenerator.h"
 #include "UIMatrixReader.h"
 #include "UIMatrixFiller.h"
-#include "MatrixSum.h"
+#include "Alg_matrixSum.h"
 
 namespace Prueba1 {
 
@@ -26,13 +26,13 @@ namespace Prueba1 {
 		{
 			InitializeComponent();
 			//
-			//TODO: agregar código de constructor aquí
+			//TODO: agregar cï¿½digo de constructor aquï¿½
 			//
 		}
 
 	protected:
 		/// <summary>
-		/// Limpiar los recursos que se estén utilizando.
+		/// Limpiar los recursos que se estï¿½n utilizando.
 		/// </summary>
 		~FormMatrixSum()
 		{
@@ -70,14 +70,14 @@ namespace Prueba1 {
 
 	private:
 		/// <summary>
-		/// Variable del diseñador requerida.
+		/// Variable del diseï¿½ador requerida.
 		/// </summary>
 		System::ComponentModel::Container ^components;
 
 #pragma region Windows Form Designer generated code
 		/// <summary>
-		/// Método necesario para admitir el Diseñador. No se puede modificar
-		/// el contenido del método con el editor de código.
+		/// Mï¿½todo necesario para admitir el Diseï¿½ador. No se puede modificar
+		/// el contenido del mï¿½todo con el editor de cï¿½digo.
 		/// </summary>
 		void InitializeComponent(void)
 		{
