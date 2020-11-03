@@ -1,4 +1,4 @@
-#include "Alg_matrixSum.h"
+#include "Alg_MatrixSum.h"
 
 t_matrix Alg_matrixSum(t_matrix matrixA, t_matrix matrixB, int matrixNumRows, int matrixNumCol) {
 	t_matrix matrixResult = createMatrix(matrixNumRows, matrixNumCol);

@@ -13,103 +13,109 @@
       <UniqueIdentifier>{67DA6AB6-F800-4c08-8B7A-83BB121AAD01}</UniqueIdentifier>
       <Extensions>rc;ico;cur;bmp;dlg;rc2;rct;bin;rgs;gif;jpg;jpeg;jpe;resx;tiff;tif;png;wav;mfcribbon-ms</Extensions>
     </Filter>
-    <Filter Include="Archivos de encabezado\Util">
-      <UniqueIdentifier>{643e87c6-259e-4e47-83b5-5067a0ed6bbd}</UniqueIdentifier>
+    <Filter Include="Archivos de código fuente\Algoritms">
+      <UniqueIdentifier>{fb7223e7-279a-46c0-91cd-d7d4f65c6995}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Archivos de encabezado\Algoritms">
+      <UniqueIdentifier>{60ca4e82-1e34-4e55-a0e0-cf5c59983b5e}</UniqueIdentifier>
     </Filter>
     <Filter Include="Archivos de código fuente\Util">
-      <UniqueIdentifier>{1b108449-3238-4877-870a-a94bd2c5c579}</UniqueIdentifier>
+      <UniqueIdentifier>{8c7a910a-c36b-47bf-ae0d-b087270b951e}</UniqueIdentifier>
     </Filter>
-    <Filter Include="Archivos de encabezado\MatrixAlgoritms">
-      <UniqueIdentifier>{27e10907-9afc-4712-bb83-fda728b24aa4}</UniqueIdentifier>
-    </Filter>
-    <Filter Include="Archivos de código fuente\MatrixAlgoritms">
-      <UniqueIdentifier>{1fb78730-f7c3-4cdd-a83b-258ba80c49e7}</UniqueIdentifier>
+    <Filter Include="Archivos de encabezado\Util">
+      <UniqueIdentifier>{b80065fc-4699-4626-8ff6-02a262244ec4}</UniqueIdentifier>
     </Filter>
   </ItemGroup>
   <ItemGroup>
-    <ClCompile Include="MatrixSum.cpp">
-      <Filter>Archivos de código fuente\MatrixAlgoritms</Filter>
-    </ClCompile>
-    <ClCompile Include="MatrixMultiplication.cpp">
-      <Filter>Archivos de código fuente\MatrixAlgoritms</Filter>
-    </ClCompile>
-    <ClCompile Include="MatrixMultScalar.cpp">
-      <Filter>Archivos de código fuente\MatrixAlgoritms</Filter>
-    </ClCompile>
-    <ClCompile Include="MatrixTranspose.cpp">
-      <Filter>Archivos de código fuente\MatrixAlgoritms</Filter>
-    </ClCompile>
-    <ClCompile Include="UTL_Matrix.cpp">
-      <Filter>Archivos de código fuente\Util</Filter>
-    </ClCompile>
-    <ClCompile Include="UTL_Vector.cpp">
-      <Filter>Archivos de código fuente\Util</Filter>
-    </ClCompile>
-    <ClCompile Include="Alg_Inverse_Matrix.cpp">
-      <Filter>Archivos de código fuente\MatrixAlgoritms</Filter>
-    </ClCompile>
-    <ClCompile Include="Alg_System_Equation.cpp">
-      <Filter>Archivos de código fuente\MatrixAlgoritms</Filter>
-    </ClCompile>
     <ClCompile Include="Main.cpp">
       <Filter>Archivos de código fuente</Filter>
     </ClCompile>
-    <ClCompile Include="UIMatrixFiller.cpp">
+    <ClCompile Include="Alg_InverseMatrix.cpp">
+      <Filter>Archivos de código fuente\Algoritms</Filter>
+    </ClCompile>
+    <ClCompile Include="Alg_ResolveSystemEquation.cpp">
+      <Filter>Archivos de código fuente\Algoritms</Filter>
+    </ClCompile>
+    <ClCompile Include="UI_MatrixFiller.cpp">
       <Filter>Archivos de código fuente\Util</Filter>
     </ClCompile>
-    <ClCompile Include="UIMatrixGenerator.cpp">
+    <ClCompile Include="UI_MatrixGenerator.cpp">
       <Filter>Archivos de código fuente\Util</Filter>
     </ClCompile>
-    <ClCompile Include="UIMatrixReader.cpp">
+    <ClCompile Include="UI_MatrixReader.cpp">
       <Filter>Archivos de código fuente\Util</Filter>
+    </ClCompile>
+    <ClCompile Include="Util_Matrix.cpp">
+      <Filter>Archivos de código fuente\Util</Filter>
+    </ClCompile>
+    <ClCompile Include="Util_Vector.cpp">
+      <Filter>Archivos de código fuente\Util</Filter>
+    </ClCompile>
+    <ClCompile Include="Alg_MatrixMultiplication.cpp">
+      <Filter>Archivos de código fuente\Algoritms</Filter>
+    </ClCompile>
+    <ClCompile Include="Alg_MatrixMultScalar.cpp">
+      <Filter>Archivos de código fuente\Algoritms</Filter>
+    </ClCompile>
+    <ClCompile Include="Alg_MatrixSum.cpp">
+      <Filter>Archivos de código fuente\Algoritms</Filter>
+    </ClCompile>
+    <ClCompile Include="Alg_MatrixTranspose.cpp">
+      <Filter>Archivos de código fuente\Algoritms</Filter>
+    </ClCompile>
+    <ClCompile Include="Form_MatrixScalar.cpp">
+      <Filter>Archivos de código fuente</Filter>
     </ClCompile>
   </ItemGroup>
   <ItemGroup>
-    <ClInclude Include="UIMatrixSum.h">
+    <ClInclude Include="Alg_InverseMatrix.h">
+      <Filter>Archivos de encabezado\Algoritms</Filter>
+    </ClInclude>
+    <ClInclude Include="Alg_ResolveSystemEquation.h">
+      <Filter>Archivos de encabezado\Algoritms</Filter>
+    </ClInclude>
+    <ClInclude Include="UI_MatrixFiller.h">
+      <Filter>Archivos de encabezado\Util</Filter>
+    </ClInclude>
+    <ClInclude Include="UI_MatrixGenerator.h">
+      <Filter>Archivos de encabezado\Util</Filter>
+    </ClInclude>
+    <ClInclude Include="UI_MatrixReader.h">
+      <Filter>Archivos de encabezado\Util</Filter>
+    </ClInclude>
+    <ClInclude Include="Util_Matrix.h">
+      <Filter>Archivos de encabezado\Util</Filter>
+    </ClInclude>
+    <ClInclude Include="Util_Vector.h">
+      <Filter>Archivos de encabezado\Util</Filter>
+    </ClInclude>
+    <ClInclude Include="Form_MatrixSum.h">
       <Filter>Archivos de encabezado</Filter>
     </ClInclude>
-    <ClInclude Include="MatrixSum.h">
-      <Filter>Archivos de encabezado\MatrixAlgoritms</Filter>
-    </ClInclude>
-    <ClInclude Include="MatrixMultiplication.h">
-      <Filter>Archivos de encabezado\MatrixAlgoritms</Filter>
-    </ClInclude>
-    <ClInclude Include="MatrixMultScalar.h">
-      <Filter>Archivos de encabezado\MatrixAlgoritms</Filter>
-    </ClInclude>
-    <ClInclude Include="MatrixTranspose.h">
-      <Filter>Archivos de encabezado\MatrixAlgoritms</Filter>
-    </ClInclude>
-    <ClInclude Include="UTL_Matrix.h">
-      <Filter>Archivos de encabezado\Util</Filter>
-    </ClInclude>
-    <ClInclude Include="UTL_Vector.h">
-      <Filter>Archivos de encabezado\Util</Filter>
-    </ClInclude>
-    <ClInclude Include="Alg_Inverse_Matrix.h">
-      <Filter>Archivos de encabezado\MatrixAlgoritms</Filter>
-    </ClInclude>
-    <ClInclude Include="Alg_System_Equation.h">
-      <Filter>Archivos de encabezado\MatrixAlgoritms</Filter>
-    </ClInclude>
-    <ClInclude Include="FormStartMenu.h">
+    <ClInclude Include="Form_StartMenu.h">
       <Filter>Archivos de encabezado</Filter>
     </ClInclude>
-    <ClInclude Include="UIMatrixFiller.h">
-      <Filter>Archivos de encabezado\Util</Filter>
+    <ClInclude Include="Alg_MatrixMultiplication.h">
+      <Filter>Archivos de encabezado\Algoritms</Filter>
     </ClInclude>
-    <ClInclude Include="UIMatrixGenerator.h">
-      <Filter>Archivos de encabezado\Util</Filter>
+    <ClInclude Include="Alg_MatrixMultScalar.h">
+      <Filter>Archivos de encabezado\Algoritms</Filter>
     </ClInclude>
-    <ClInclude Include="UIMatrixReader.h">
-      <Filter>Archivos de encabezado\Util</Filter>
+    <ClInclude Include="Alg_MatrixSum.h">
+      <Filter>Archivos de encabezado\Algoritms</Filter>
+    </ClInclude>
+    <ClInclude Include="Alg_MatrixTranspose.h">
+      <Filter>Archivos de encabezado\Algoritms</Filter>
+    </ClInclude>
+    <ClInclude Include="Form_MatrixScalar.h">
+      <Filter>Archivos de encabezado</Filter>
     </ClInclude>
   </ItemGroup>
   <ItemGroup>
-    <EmbeddedResource Include="UIMatrixSum.resx">
+    <EmbeddedResource Include="Form_MatrixSum.resx">
       <Filter>Archivos de recursos</Filter>
     </EmbeddedResource>
-    <EmbeddedResource Include="FormStartMenu.resx">
+    <EmbeddedResource Include="Form_StartMenu.resx">
       <Filter>Archivos de recursos</Filter>
     </EmbeddedResource>
   </ItemGroup>

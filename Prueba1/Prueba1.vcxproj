@@ -76,12 +76,13 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <ClCompile Include="Alg_Inverse_Matrix.cpp" />
-    <ClCompile Include="Alg_System_Equation.cpp" />
-    <ClCompile Include="MatrixMultiplication.cpp" />
-    <ClCompile Include="MatrixMultScalar.cpp" />
-    <ClCompile Include="MatrixSum.cpp" />
-    <ClCompile Include="MatrixTranspose.cpp" />
+    <ClCompile Include="Alg_InverseMatrix.cpp" />
+    <ClCompile Include="Alg_MatrixMultiplication.cpp" />
+    <ClCompile Include="Alg_MatrixMultScalar.cpp" />
+    <ClCompile Include="Alg_MatrixSum.cpp" />
+    <ClCompile Include="Alg_MatrixTranspose.cpp" />
+    <ClCompile Include="Alg_ResolveSystemEquation.cpp" />
+    <ClCompile Include="Form_MatrixScalar.cpp" />
     <ClCompile Include="Main.cpp">
       <CompileAsManaged Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">true</CompileAsManaged>
       <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
@@ -98,37 +99,43 @@
       <DebugInformationFormat Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">ProgramDatabase</DebugInformationFormat>
       <ExceptionHandling Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">Async</ExceptionHandling>
     </ClCompile>
-    <ClCompile Include="UIMatrixFiller.cpp" />
-    <ClCompile Include="UIMatrixGenerator.cpp" />
-    <ClCompile Include="UIMatrixReader.cpp" />
-    <ClCompile Include="UTL_Matrix.cpp" />
-    <ClCompile Include="UTL_Vector.cpp" />
+    <ClCompile Include="UI_MatrixFiller.cpp" />
+    <ClCompile Include="UI_MatrixGenerator.cpp" />
+    <ClCompile Include="UI_MatrixReader.cpp" />
+    <ClCompile Include="Util_Matrix.cpp" />
+    <ClCompile Include="Util_Vector.cpp" />
   </ItemGroup>
   <ItemGroup>
-    <ClInclude Include="Alg_Inverse_Matrix.h" />
-    <ClInclude Include="Alg_System_Equation.h" />
-    <ClInclude Include="MatrixMultiplication.h" />
-    <ClInclude Include="MatrixMultScalar.h" />
-    <ClInclude Include="MatrixSum.h" />
-    <ClInclude Include="MatrixTranspose.h" />
-    <ClInclude Include="FormStartMenu.h">
+    <ClInclude Include="Alg_InverseMatrix.h" />
+    <ClInclude Include="Alg_MatrixMultiplication.h" />
+    <ClInclude Include="Alg_MatrixMultScalar.h" />
+    <ClInclude Include="Alg_MatrixSum.h" />
+    <ClInclude Include="Alg_MatrixTranspose.h" />
+    <ClInclude Include="Alg_ResolveSystemEquation.h" />
+    <ClInclude Include="Form_MatrixScalar.h">
       <FileType>CppForm</FileType>
     </ClInclude>
-    <ClInclude Include="UIMatrixSum.h">
+    <ClInclude Include="Form_StartMenu.h">
       <FileType>CppForm</FileType>
     </ClInclude>
-    <ClInclude Include="UIMatrixFiller.h" />
-    <ClInclude Include="UIMatrixGenerator.h" />
-    <ClInclude Include="UIMatrixReader.h" />
-    <ClInclude Include="UTL_Matrix.h" />
-    <ClInclude Include="UTL_Vector.h" />
+    <ClInclude Include="UI_MatrixFiller.h" />
+    <ClInclude Include="UI_MatrixGenerator.h" />
+    <ClInclude Include="UI_MatrixReader.h" />
+    <ClInclude Include="Form_MatrixSum.h">
+      <FileType>CppForm</FileType>
+    </ClInclude>
+    <ClInclude Include="Util_Matrix.h" />
+    <ClInclude Include="Util_Vector.h" />
   </ItemGroup>
   <ItemGroup>
-    <EmbeddedResource Include="FormStartMenu.resx">
-      <DependentUpon>FormStartMenu.h</DependentUpon>
+    <EmbeddedResource Include="Form_MatrixScalar.resx">
+      <DependentUpon>Form_MatrixScalar.h</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="UIMatrixSum.resx">
-      <DependentUpon>UIMatrixSum.h</DependentUpon>
+    <EmbeddedResource Include="Form_StartMenu.resx">
+      <DependentUpon>Form_StartMenu.h</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form_MatrixSum.resx">
+      <DependentUpon>Form_MatrixSum.h</DependentUpon>
     </EmbeddedResource>
   </ItemGroup>
   <ItemGroup>

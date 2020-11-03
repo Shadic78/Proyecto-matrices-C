@@ -1,7 +1,8 @@
 #include "Alg_InverseMatrix.h"
 
+t_matrix aumentIdentityMatrix(t_matrix matrix, int dimension);
 
-t_matrix inverseMatrix(t_matrix matrix, int dimension) {
+t_matrix Alg_inverseMatrix(t_matrix matrix, int dimension) {
 
 	t_matrix matrixAumented = aumentIdentityMatrix(matrix, dimension);
 

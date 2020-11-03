@@ -1,4 +1,4 @@
-#include "Alg_matrixTranspose.h"
+#include "Alg_MatrixTranspose.h"
 
 t_matrix Alg_matrixTranspose(t_matrix matrixA, int matrixNumRows, int matrixNumCol){
 	t_matrix matrixResult = createMatrix(matrixNumRows, matrixNumCol);

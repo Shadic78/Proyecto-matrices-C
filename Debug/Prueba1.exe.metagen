@@ -1,5 +1,6 @@
-  Prueba1.FormStartMenu.resources - Embedded, ContainedInManifestFile, 
-  Prueba1.UIMatrixSum.resources - Embedded, ContainedInManifestFile, 
+  Prueba1.Form_MatrixScalar.resources - Embedded, ContainedInManifestFile, 
+  Prueba1.Form_StartMenu.resources - Embedded, ContainedInManifestFile, 
+  Prueba1.Form_MatrixSum.resources - Embedded, ContainedInManifestFile, 
 ImageRuntimeVersion: v4.0.30319
 Assembly Prueba1, Version=0.0.*, Culture=Todos los idiomas (todos los países): 
 	hash=SHA1, flags=PublicKey
@@ -15,7 +16,10 @@ Assembly System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=
 	hash=None, flags=None
 Assembly System.Xml, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089: 
 	hash=None, flags=None
-Class Prueba1.FormMatrixSum: AutoLayout, AnsiClass, Class, Public, BeforeFieldInit
+Class Prueba1.Form_MatrixScalar: AutoLayout, AnsiClass, Class, Public, BeforeFieldInit
+  :System.Windows.Forms.Form
+    Void .ctor(): PrivateScope, Public, HideBySig, SpecialName, RTSpecialName
+Class Prueba1.Form_MatrixSum: AutoLayout, AnsiClass, Class, Public, BeforeFieldInit
   :System.Windows.Forms.Form
     Void .ctor(): PrivateScope, Public, HideBySig, SpecialName, RTSpecialName
 Class Prueba1.FormStartMenu: AutoLayout, AnsiClass, Class, Public, BeforeFieldInit
