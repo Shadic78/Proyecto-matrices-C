@@ -1,9 +1,11 @@
 #pragma once
 #include "Util_Matrix.h"
-#include "Alg_MatrixMultiplication.h"
 #include "UI_MatrixGenerator.h"
 #include "UI_MatrixReader.h"
 #include "UI_MatrixFiller.h"
+#include "UI_ClearMatrixContainer.h"
+#include "Alg_MatrixMultiplication.h"
+
 
 namespace Prueba1 {
 
@@ -330,6 +332,7 @@ namespace Prueba1 {
 
 					 UI_matrixGenerator(matrixANumRows, matrixANumCols, "matrixA", ContainerMatrixA);
 					 UI_matrixGenerator(matrixBNumRows, matrixBNumCols, "matrixB", ContainerMatrixB);
+					 UI_clearMatrixContainer(ContainerMatrixResult);
 				 }
 				 else {
 					 LbMatrixGenerationError->Text = "MatrixA num of cols isn´t equal to MatrixB num of rows";

@@ -75,6 +75,9 @@
     <ClCompile Include="Form_MatrixInverse.cpp">
       <Filter>Archivos de código fuente</Filter>
     </ClCompile>
+    <ClCompile Include="UI_ClearMatrixContainer.cpp">
+      <Filter>Archivos de código fuente\Util</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="Alg_InverseMatrix.h">
@@ -128,6 +131,9 @@
     <ClInclude Include="Form_MatrixInverse.h">
       <Filter>Archivos de encabezado</Filter>
     </ClInclude>
+    <ClInclude Include="UI_ClearMatrixContainer.h">
+      <Filter>Archivos de encabezado\Util</Filter>
+    </ClInclude>
   </ItemGroup>
   <ItemGroup>
     <EmbeddedResource Include="Form_MatrixSum.resx">
@@ -143,6 +149,9 @@
       <Filter>Archivos de recursos</Filter>
     </EmbeddedResource>
     <EmbeddedResource Include="Form_MatrixTranspose.resx">
+      <Filter>Archivos de recursos</Filter>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form_MatrixInverse.resx">
       <Filter>Archivos de recursos</Filter>
     </EmbeddedResource>
   </ItemGroup>

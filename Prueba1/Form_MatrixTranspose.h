@@ -3,6 +3,7 @@
 #include "UI_MatrixGenerator.h"
 #include "UI_MatrixFiller.h"
 #include "UI_MatrixReader.h"
+#include "UI_ClearMatrixContainer.h"
 #include "Alg_MatrixTranspose.h"
 
 namespace Prueba1 {
@@ -243,6 +244,7 @@ namespace Prueba1 {
 				 matrixNumCols = Convert::ToInt32(TxtMatrixCols->Text);
 
 				 UI_matrixGenerator(matrixNumRows, matrixNumCols, "matrix", ContainerMatrix);
+				 UI_clearMatrixContainer(ContainerMatrixResult);
 	}
 	private: System::Void BtnCalculate_Click(System::Object^  sender, System::EventArgs^  e) {
 				 t_matrix matrixToTransponse = UI_matrixReader(matrixNumRows, matrixNumCols, "matrix", ContainerMatrix);

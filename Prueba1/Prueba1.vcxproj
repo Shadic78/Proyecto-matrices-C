@@ -102,6 +102,7 @@
       <DebugInformationFormat Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">ProgramDatabase</DebugInformationFormat>
       <ExceptionHandling Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">Async</ExceptionHandling>
     </ClCompile>
+    <ClCompile Include="UI_ClearMatrixContainer.cpp" />
     <ClCompile Include="UI_MatrixFiller.cpp" />
     <ClCompile Include="UI_MatrixGenerator.cpp" />
     <ClCompile Include="UI_MatrixReader.cpp" />
@@ -130,6 +131,7 @@
     <ClInclude Include="Form_StartMenu.h">
       <FileType>CppForm</FileType>
     </ClInclude>
+    <ClInclude Include="UI_ClearMatrixContainer.h" />
     <ClInclude Include="UI_MatrixFiller.h" />
     <ClInclude Include="UI_MatrixGenerator.h" />
     <ClInclude Include="UI_MatrixReader.h" />

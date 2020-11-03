@@ -5,6 +5,7 @@
 #include "UI_MatrixGenerator.h"
 #include "UI_MatrixReader.h"
 #include "UI_MatrixFiller.h"
+#include "UI_ClearMatrixContainer.h"
 #include "Alg_matrixSum.h"
 
 namespace Prueba1 {
@@ -252,6 +253,7 @@ namespace Prueba1 {
 
 				 UI_matrixGenerator(matrixNumRows, matrixNumCols, "matrixA", ContainerMatrixA);
 				 UI_matrixGenerator(matrixNumRows, matrixNumCols, "matrixB", ContainerMatrixB);
+				 UI_clearMatrixContainer(ContainerMatrixResult);
 	}
 
 	private: System::Void BtnLeerTextBox_Click(System::Object^  sender, System::EventArgs^  e) {
