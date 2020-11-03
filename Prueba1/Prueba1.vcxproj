@@ -82,6 +82,7 @@
     <ClCompile Include="Alg_MatrixSum.cpp" />
     <ClCompile Include="Alg_MatrixTranspose.cpp" />
     <ClCompile Include="Alg_ResolveSystemEquation.cpp" />
+    <ClCompile Include="Form_MatrixMultiplication.cpp" />
     <ClCompile Include="Form_MatrixScalar.cpp" />
     <ClCompile Include="Main.cpp">
       <CompileAsManaged Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">true</CompileAsManaged>
@@ -112,6 +113,9 @@
     <ClInclude Include="Alg_MatrixSum.h" />
     <ClInclude Include="Alg_MatrixTranspose.h" />
     <ClInclude Include="Alg_ResolveSystemEquation.h" />
+    <ClInclude Include="Form_MatrixMultiplication.h">
+      <FileType>CppForm</FileType>
+    </ClInclude>
     <ClInclude Include="Form_MatrixScalar.h">
       <FileType>CppForm</FileType>
     </ClInclude>
@@ -128,6 +132,9 @@
     <ClInclude Include="Util_Vector.h" />
   </ItemGroup>
   <ItemGroup>
+    <EmbeddedResource Include="Form_MatrixMultiplication.resx">
+      <DependentUpon>Form_MatrixMultiplication.h</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Form_MatrixScalar.resx">
       <DependentUpon>Form_MatrixScalar.h</DependentUpon>
     </EmbeddedResource>

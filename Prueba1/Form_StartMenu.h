@@ -1,6 +1,7 @@
 #pragma once
 #include "Form_MatrixSum.h"
 #include "Form_MatrixScalar.h"
+#include "Form_MatrixMultiplication.h"
 
 namespace Prueba1 {
 
@@ -111,6 +112,7 @@ namespace Prueba1 {
 			this->BtnMatrixMult->TabIndex = 4;
 			this->BtnMatrixMult->Text = L"Matrix multiplication";
 			this->BtnMatrixMult->UseVisualStyleBackColor = true;
+			this->BtnMatrixMult->Click += gcnew System::EventHandler(this, &FormStartMenu::BtnMatrixMult_Click);
 			// 
 			// BtnTranspose
 			// 
@@ -178,6 +180,12 @@ namespace Prueba1 {
 				 Form_MatrixScalar^ formMatrixScalar = gcnew Form_MatrixScalar;
 				 this->Hide();
 				 formMatrixScalar->ShowDialog();
+				 this->Show();
+	}
+	private: System::Void BtnMatrixMult_Click(System::Object^  sender, System::EventArgs^  e) {
+				 Form_MatrixMultiplication^ formMatrixMultiplication = gcnew Form_MatrixMultiplication;
+				 this->Hide();
+				 formMatrixMultiplication->ShowDialog();
 				 this->Show();
 	}
 };

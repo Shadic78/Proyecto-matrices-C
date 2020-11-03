@@ -267,7 +267,7 @@ namespace Prueba1 {
 
 				 t_matrix matrixResult = Alg_matrixMultScalar(matrix, matrixNumRows, matrixNumCols, scalar);
 
-				 UI_matrixFiller(matrixNumRows, matrixNumCols, "matrixResult", ContainerMatrixResult, matrixResult);
+				 UI_matrixFiller(matrixResult, matrixNumRows, matrixNumCols, "matrixResult", ContainerMatrixResult);
 	}
 };
 }

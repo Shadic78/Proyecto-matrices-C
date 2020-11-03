@@ -1,6 +1,6 @@
 #include "UI_MatrixFiller.h"
 
-void UI_matrixFiller(int matrixNumRows, int matrixNumColumns, String^ identifier, GroupBox^ container, t_matrix matrix) {
+void UI_matrixFiller(t_matrix matrix, int matrixNumRows, int matrixNumColumns, String^ identifier, GroupBox^ container) {
 
 	for (int row = 0; row < matrixNumRows; row++) {
 		for (int column = 0; column < matrixNumColumns; column++) {

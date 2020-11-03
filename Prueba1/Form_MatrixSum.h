@@ -103,11 +103,11 @@ namespace Prueba1 {
 			this->label1->AutoSize = true;
 			this->label1->Font = (gcnew System::Drawing::Font(L"Microsoft Sans Serif", 15.75F, System::Drawing::FontStyle::Regular, System::Drawing::GraphicsUnit::Point,
 				static_cast<System::Byte>(0)));
-			this->label1->Location = System::Drawing::Point(357, 22);
+			this->label1->Location = System::Drawing::Point(387, 22);
 			this->label1->Name = L"label1";
-			this->label1->Size = System::Drawing::Size(184, 25);
+			this->label1->Size = System::Drawing::Size(117, 25);
 			this->label1->TabIndex = 0;
-			this->label1->Text = L"Suma de matrices";
+			this->label1->Text = L"Matrix sum";
 			// 
 			// BtnGenerateMatrix
 			// 
@@ -259,15 +259,12 @@ namespace Prueba1 {
 				 const int matrixNumRows = Convert::ToInt32(TxtMatrixRows->Text);
 				 const int matrixNumCols = Convert::ToInt32(TxtMatrixCols->Text);
 
-				 // Leer las dos matrices de entrada
 				 t_matrix matrixA = UI_matrixReader(matrixNumRows, matrixNumCols, "matrixA", ContainerMatrixA);
 				 t_matrix matrixB = UI_matrixReader(matrixNumRows, matrixNumCols, "matrixB", ContainerMatrixB);
 
-				 // Hacer las operaciones
 				 t_matrix matrixResult = Alg_matrixSum(matrixA, matrixB, matrixNumRows, matrixNumCols);
 
-				 // Rellenar la matrix de resultado
-				 UI_matrixFiller(matrixNumRows, matrixNumCols, "matrixResult", ContainerMatrixResult, matrixResult);
+				 UI_matrixFiller(matrixResult, matrixNumRows, matrixNumCols, "matrixResult", ContainerMatrixResult);
 	}
 
 };
