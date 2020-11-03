@@ -163,7 +163,6 @@ namespace Prueba1 {
 			this->ContainerMatrix->TabIndex = 8;
 			this->ContainerMatrix->TabStop = false;
 			this->ContainerMatrix->Text = L"Matrix";
-			this->ContainerMatrix->Enter += gcnew System::EventHandler(this, &Form_MatrixTranspose::ContainerMatrix_Enter);
 			// 
 			// label2
 			// 
@@ -194,7 +193,7 @@ namespace Prueba1 {
 			this->ContainerMatrixResult->Size = System::Drawing::Size(260, 174);
 			this->ContainerMatrixResult->TabIndex = 10;
 			this->ContainerMatrixResult->TabStop = false;
-			this->ContainerMatrixResult->Text = L"Matrix";
+			this->ContainerMatrixResult->Text = L"Matrix result";
 			// 
 			// label6
 			// 
@@ -239,8 +238,6 @@ namespace Prueba1 {
 
 		}
 #pragma endregion
-	private: System::Void ContainerMatrix_Enter(System::Object^  sender, System::EventArgs^  e) {
-	}
 	private: System::Void BtnGenerateMatrix_Click(System::Object^  sender, System::EventArgs^  e) {
 				 matrixNumRows = Convert::ToInt32(TxtMatrixRows->Text);
 				 matrixNumCols = Convert::ToInt32(TxtMatrixCols->Text);

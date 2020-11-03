@@ -3,6 +3,7 @@
 #include "Form_MatrixScalar.h"
 #include "Form_MatrixMultiplication.h"
 #include "Form_MatrixTranspose.h"
+#include "Form_MatrixInverse.h"
 
 namespace Prueba1 {
 
@@ -133,6 +134,7 @@ namespace Prueba1 {
 			this->BtnInverse->TabIndex = 6;
 			this->BtnInverse->Text = L"Matrix inverse";
 			this->BtnInverse->UseVisualStyleBackColor = true;
+			this->BtnInverse->Click += gcnew System::EventHandler(this, &FormStartMenu::BtnInverse_Click);
 			// 
 			// BtnEquations
 			// 
@@ -194,6 +196,12 @@ namespace Prueba1 {
 				 Form_MatrixTranspose^ formMatrixTranspose = gcnew Form_MatrixTranspose;
 				 this->Hide();
 				 formMatrixTranspose->ShowDialog();
+				 this->Show();
+	}
+	private: System::Void BtnInverse_Click(System::Object^  sender, System::EventArgs^  e) {
+				 Form_MatrixInverse^ formMatrixInverse = gcnew Form_MatrixInverse;
+				 this->Hide();
+				 formMatrixInverse->ShowDialog();
 				 this->Show();
 	}
 };
