@@ -4,6 +4,8 @@
 #include "Form_MatrixMultiplication.h"
 #include "Form_MatrixTranspose.h"
 #include "Form_MatrixInverse.h"
+#include "Form_EcuationSystem.h"
+#include "Form_MatrixDeterminant.h"
 
 namespace Prueba1 {
 
@@ -144,6 +146,7 @@ namespace Prueba1 {
 			this->BtnEquations->TabIndex = 7;
 			this->BtnEquations->Text = L"Matrix sistem of equations";
 			this->BtnEquations->UseVisualStyleBackColor = true;
+			this->BtnEquations->Click += gcnew System::EventHandler(this, &FormStartMenu::BtnEquations_Click);
 			// 
 			// BtnDeterminant
 			// 
@@ -153,6 +156,7 @@ namespace Prueba1 {
 			this->BtnDeterminant->TabIndex = 8;
 			this->BtnDeterminant->Text = L"Matrix determinant";
 			this->BtnDeterminant->UseVisualStyleBackColor = true;
+			this->BtnDeterminant->Click += gcnew System::EventHandler(this, &FormStartMenu::BtnDeterminant_Click);
 			// 
 			// FormStartMenu
 			// 
@@ -202,6 +206,18 @@ namespace Prueba1 {
 				 Form_MatrixInverse^ formMatrixInverse = gcnew Form_MatrixInverse;
 				 this->Hide();
 				 formMatrixInverse->ShowDialog();
+				 this->Show();
+	}
+	private: System::Void BtnEquations_Click(System::Object^  sender, System::EventArgs^  e) {
+				 Form_EcuationSystem^ formEcuationSystem = gcnew Form_EcuationSystem;
+				 this->Hide();
+				 formEcuationSystem->ShowDialog();
+				 this->Show();
+	}
+	private: System::Void BtnDeterminant_Click(System::Object^  sender, System::EventArgs^  e) {
+				 Form_MatrixDeterminant^ formMatrixDeterminant = gcnew Form_MatrixDeterminant;
+				 this->Hide();
+				 formMatrixDeterminant->ShowDialog();
 				 this->Show();
 	}
 };

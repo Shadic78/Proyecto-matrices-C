@@ -1,3 +1,5 @@
+  Prueba1.Form_EcuationSystem.resources - Embedded, ContainedInManifestFile, 
+  Prueba1.Form_MatrixDeterminant.resources - Embedded, ContainedInManifestFile, 
   Prueba1.Form_MatrixInverse.resources - Embedded, ContainedInManifestFile, 
   Prueba1.Form_MatrixMultiplication.resources - Embedded, ContainedInManifestFile, 
   Prueba1.Form_MatrixScalar.resources - Embedded, ContainedInManifestFile, 
@@ -19,6 +21,12 @@ Assembly System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=
 	hash=None, flags=None
 Assembly System.Xml, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089: 
 	hash=None, flags=None
+Class Prueba1.Form_EcuationSystem: AutoLayout, AnsiClass, Class, Public, BeforeFieldInit
+  :System.Windows.Forms.Form
+    Void .ctor(): PrivateScope, Public, HideBySig, SpecialName, RTSpecialName
+Class Prueba1.Form_MatrixDeterminant: AutoLayout, AnsiClass, Class, Public, BeforeFieldInit
+  :System.Windows.Forms.Form
+    Void .ctor(): PrivateScope, Public, HideBySig, SpecialName, RTSpecialName
 Class Prueba1.Form_MatrixInverse: AutoLayout, AnsiClass, Class, Public, BeforeFieldInit
   :System.Windows.Forms.Form
     Void .ctor(): PrivateScope, Public, HideBySig, SpecialName, RTSpecialName

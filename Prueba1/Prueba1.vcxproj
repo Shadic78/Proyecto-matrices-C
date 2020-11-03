@@ -82,6 +82,8 @@
     <ClCompile Include="Alg_MatrixSum.cpp" />
     <ClCompile Include="Alg_MatrixTranspose.cpp" />
     <ClCompile Include="Alg_ResolveSystemEquation.cpp" />
+    <ClCompile Include="Form_EcuationSystem.cpp" />
+    <ClCompile Include="Form_MatrixDeterminant.cpp" />
     <ClCompile Include="Form_MatrixInverse.cpp" />
     <ClCompile Include="Form_MatrixMultiplication.cpp" />
     <ClCompile Include="Form_MatrixScalar.cpp" />
@@ -103,6 +105,8 @@
       <ExceptionHandling Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">Async</ExceptionHandling>
     </ClCompile>
     <ClCompile Include="UI_ClearMatrixContainer.cpp" />
+    <ClCompile Include="UI_MatrixEcuationSystemGenerator.cpp" />
+    <ClCompile Include="UI_MatrixEquationSolutionGenerator.cpp" />
     <ClCompile Include="UI_MatrixFiller.cpp" />
     <ClCompile Include="UI_MatrixGenerator.cpp" />
     <ClCompile Include="UI_MatrixReader.cpp" />
@@ -116,6 +120,12 @@
     <ClInclude Include="Alg_MatrixSum.h" />
     <ClInclude Include="Alg_MatrixTranspose.h" />
     <ClInclude Include="Alg_ResolveSystemEquation.h" />
+    <ClInclude Include="Form_EcuationSystem.h">
+      <FileType>CppForm</FileType>
+    </ClInclude>
+    <ClInclude Include="Form_MatrixDeterminant.h">
+      <FileType>CppForm</FileType>
+    </ClInclude>
     <ClInclude Include="Form_MatrixInverse.h">
       <FileType>CppForm</FileType>
     </ClInclude>
@@ -132,6 +142,8 @@
       <FileType>CppForm</FileType>
     </ClInclude>
     <ClInclude Include="UI_ClearMatrixContainer.h" />
+    <ClInclude Include="UI_MatrixEcuationSystemGenerator.h" />
+    <ClInclude Include="UI_MatrixEquationSolutionGenerator.h" />
     <ClInclude Include="UI_MatrixFiller.h" />
     <ClInclude Include="UI_MatrixGenerator.h" />
     <ClInclude Include="UI_MatrixReader.h" />
@@ -142,6 +154,12 @@
     <ClInclude Include="Util_Vector.h" />
   </ItemGroup>
   <ItemGroup>
+    <EmbeddedResource Include="Form_EcuationSystem.resx">
+      <DependentUpon>Form_EcuationSystem.h</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form_MatrixDeterminant.resx">
+      <DependentUpon>Form_MatrixDeterminant.h</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Form_MatrixInverse.resx">
       <DependentUpon>Form_MatrixInverse.h</DependentUpon>
     </EmbeddedResource>

@@ -78,6 +78,18 @@
     <ClCompile Include="UI_ClearMatrixContainer.cpp">
       <Filter>Archivos de código fuente\Util</Filter>
     </ClCompile>
+    <ClCompile Include="UI_MatrixEcuationSystemGenerator.cpp">
+      <Filter>Archivos de código fuente\Util</Filter>
+    </ClCompile>
+    <ClCompile Include="Form_EcuationSystem.cpp">
+      <Filter>Archivos de código fuente</Filter>
+    </ClCompile>
+    <ClCompile Include="UI_MatrixEquationSolutionGenerator.cpp">
+      <Filter>Archivos de código fuente\Util</Filter>
+    </ClCompile>
+    <ClCompile Include="Form_MatrixDeterminant.cpp">
+      <Filter>Archivos de código fuente</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="Alg_InverseMatrix.h">
@@ -134,6 +146,18 @@
     <ClInclude Include="UI_ClearMatrixContainer.h">
       <Filter>Archivos de encabezado\Util</Filter>
     </ClInclude>
+    <ClInclude Include="UI_MatrixEcuationSystemGenerator.h">
+      <Filter>Archivos de encabezado\Util</Filter>
+    </ClInclude>
+    <ClInclude Include="Form_EcuationSystem.h">
+      <Filter>Archivos de encabezado</Filter>
+    </ClInclude>
+    <ClInclude Include="UI_MatrixEquationSolutionGenerator.h">
+      <Filter>Archivos de encabezado\Util</Filter>
+    </ClInclude>
+    <ClInclude Include="Form_MatrixDeterminant.h">
+      <Filter>Archivos de encabezado</Filter>
+    </ClInclude>
   </ItemGroup>
   <ItemGroup>
     <EmbeddedResource Include="Form_MatrixSum.resx">
@@ -152,6 +176,9 @@
       <Filter>Archivos de recursos</Filter>
     </EmbeddedResource>
     <EmbeddedResource Include="Form_MatrixInverse.resx">
+      <Filter>Archivos de recursos</Filter>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form_EcuationSystem.resx">
       <Filter>Archivos de recursos</Filter>
     </EmbeddedResource>
   </ItemGroup>
