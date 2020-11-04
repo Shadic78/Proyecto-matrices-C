@@ -1,13 +1,41 @@
-﻿Compilación iniciada a las 03/11/2020 05:21:18 p. m..
-     1>Proyecto "C:\Users\Equipo1\Documents\Visual Studio 2013\Projects\Prueba1\Prueba1\Prueba1.vcxproj" en el nodo 2 (Build destinos).
+﻿Compilación iniciada a las 03/11/2020 07:27:16 p. m..
+     1>Proyecto "C:\Users\Equipo1\Documents\Visual Studio 2013\Projects\Prueba1\Prueba1\Prueba1.vcxproj" en el nodo 2 (Rebuild destinos).
      1>C:\Program Files (x86)\MSBuild\Microsoft.Cpp\v4.0\V120\Microsoft.CppBuild.targets(381,5): warning MSB8028: The intermediate directory (Debug\) contains files shared from another project (ProyectoMatrices.vcxproj).  This can lead to incorrect clean and rebuild behavior.
      1>ClCompile:
-         C:\Program Files (x86)\Microsoft Visual Studio 12.0\VC\bin\CL.exe /c /AI"C:\Program Files (x86)\Reference Assemblies\Microsoft\Framework\.NETFramework\v4.0" /AI"C:\Program Files (x86)\Windows Kits\8.1\References\CommonConfiguration\Neutral" /Zi /clr /nologo /W3 /WX- /sdl /Od /Oy- /D _MBCS /EHa /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Fo"Debug\\" /Fd"Debug\vc120.pdb" /TP /FU"C:\Program Files (x86)\Reference Assemblies\Microsoft\Framework\.NETFramework\v4.0\mscorlib.dll" /FU"C:\Program Files (x86)\Reference Assemblies\Microsoft\Framework\.NETFramework\v4.0\System.Data.dll" /FU"C:\Program Files (x86)\Reference Assemblies\Microsoft\Framework\.NETFramework\v4.0\System.dll" /FU"C:\Program Files (x86)\Reference Assemblies\Microsoft\Framework\.NETFramework\v4.0\System.Drawing.dll" /FU"C:\Program Files (x86)\Reference Assemblies\Microsoft\Framework\.NETFramework\v4.0\System.Windows.Forms.dll" /FU"C:\Program Files (x86)\Reference Assemblies\Microsoft\Framework\.NETFramework\v4.0\System.Xml.dll" /analyze- /errorReport:prompt /clr:nostdlib Form_MatrixDeterminant.cpp
+         C:\Program Files (x86)\Microsoft Visual Studio 12.0\VC\bin\CL.exe /c /AI"C:\Program Files (x86)\Reference Assemblies\Microsoft\Framework\.NETFramework\v4.0" /AI"C:\Program Files (x86)\Windows Kits\8.1\References\CommonConfiguration\Neutral" /Zi /clr /nologo /W3 /WX- /sdl /Od /Oy- /D _MBCS /EHa /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Fo"Debug\\" /Fd"Debug\vc120.pdb" /TP /FU"C:\Program Files (x86)\Reference Assemblies\Microsoft\Framework\.NETFramework\v4.0\mscorlib.dll" /FU"C:\Program Files (x86)\Reference Assemblies\Microsoft\Framework\.NETFramework\v4.0\System.Data.dll" /FU"C:\Program Files (x86)\Reference Assemblies\Microsoft\Framework\.NETFramework\v4.0\System.dll" /FU"C:\Program Files (x86)\Reference Assemblies\Microsoft\Framework\.NETFramework\v4.0\System.Drawing.dll" /FU"C:\Program Files (x86)\Reference Assemblies\Microsoft\Framework\.NETFramework\v4.0\System.Windows.Forms.dll" /FU"C:\Program Files (x86)\Reference Assemblies\Microsoft\Framework\.NETFramework\v4.0\System.Xml.dll" /analyze- /errorReport:prompt /clr:nostdlib Alg_InverseMatrix.cpp Alg_MatrixDeterminant.cpp Alg_MatrixMultiplication.cpp Alg_MatrixMultScalar.cpp Alg_MatrixSum.cpp Alg_MatrixTranspose.cpp Alg_ResolveSystemEquation.cpp Form_EcuationSystem.cpp Form_MatrixDeterminant.cpp Form_MatrixInverse.cpp Form_MatrixMultiplication.cpp Form_MatrixScalar.cpp Form_MatrixTranspose.cpp UI_ClearMatrixContainer.cpp UI_MatrixEcuationSystemGenerator.cpp UI_MatrixEquationSolutionGenerator.cpp UI_MatrixFiller.cpp UI_MatrixGenerator.cpp UI_MatrixReader.cpp Util_Matrix.cpp Util_Vector.cpp
+         Alg_InverseMatrix.cpp
+         Alg_MatrixDeterminant.cpp
+     1>Alg_MatrixDeterminant.cpp(10): warning C4244: '=' : conversión de 't_matrix_value' a 'int'; posible pérdida de datos
+     1>Alg_MatrixDeterminant.cpp(18): warning C4244: '+=' : conversión de 't_matrix_value' a 'int'; posible pérdida de datos
+         Alg_MatrixMultiplication.cpp
+         Alg_MatrixMultScalar.cpp
+         Alg_MatrixSum.cpp
+         Alg_MatrixTranspose.cpp
+         Alg_ResolveSystemEquation.cpp
+         Form_EcuationSystem.cpp
          Form_MatrixDeterminant.cpp
+         Form_MatrixInverse.cpp
+         Form_MatrixMultiplication.cpp
+         Form_MatrixScalar.cpp
+         Form_MatrixTranspose.cpp
+         UI_ClearMatrixContainer.cpp
+         UI_MatrixEcuationSystemGenerator.cpp
+         UI_MatrixEquationSolutionGenerator.cpp
+         UI_MatrixFiller.cpp
+         UI_MatrixGenerator.cpp
+         UI_MatrixReader.cpp
+         Util_Matrix.cpp
+         Generando código...
+         Compilando...
+         Util_Vector.cpp
+         Generando código...
          C:\Program Files (x86)\Microsoft Visual Studio 12.0\VC\bin\CL.exe /c /AI"C:\Program Files (x86)\Reference Assemblies\Microsoft\Framework\.NETFramework\v4.0" /AI"C:\Program Files (x86)\Windows Kits\8.1\References\CommonConfiguration\Neutral" /Zi /clr /nologo /W3 /WX- /sdl /Od /Oy- /D _MBCS /Gm- /EHa /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Fo"Debug\\" /Fd"Debug\vc120.pdb" /TP /FU"C:\Program Files (x86)\Reference Assemblies\Microsoft\Framework\.NETFramework\v4.0\mscorlib.dll" /FU"C:\Program Files (x86)\Reference Assemblies\Microsoft\Framework\.NETFramework\v4.0\System.Data.dll" /FU"C:\Program Files (x86)\Reference Assemblies\Microsoft\Framework\.NETFramework\v4.0\System.dll" /FU"C:\Program Files (x86)\Reference Assemblies\Microsoft\Framework\.NETFramework\v4.0\System.Drawing.dll" /FU"C:\Program Files (x86)\Reference Assemblies\Microsoft\Framework\.NETFramework\v4.0\System.Windows.Forms.dll" /FU"C:\Program Files (x86)\Reference Assemblies\Microsoft\Framework\.NETFramework\v4.0\System.Xml.dll" /analyze- /errorReport:prompt /clr:nostdlib Main.cpp
          Main.cpp
+         C:\Program Files (x86)\Microsoft Visual Studio 12.0\VC\bin\CL.exe /c /Zi /clr /nologo /W3 /WX- /sdl /Od /Oy- /D _MBCS /EHa /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Fo"Debug\\" /Fd"Debug\vc120.pdb" /TP /analyze- /errorReport:prompt "C:\Users\Equipo1\AppData\Local\Temp\.NETFramework,Version=v4.0.AssemblyAttributes.cpp"
+         .NETFramework,Version=v4.0.AssemblyAttributes.cpp
        Link:
          C:\Program Files (x86)\Microsoft Visual Studio 12.0\VC\bin\link.exe /ERRORREPORT:PROMPT /OUT:"C:\Users\Equipo1\Documents\Visual Studio 2013\Projects\Prueba1\Debug\Prueba1.exe" /INCREMENTAL /NOLOGO kernel32.lib user32.lib gdi32.lib winspool.lib comdlg32.lib advapi32.lib shell32.lib ole32.lib oleaut32.lib uuid.lib odbc32.lib odbccp32.lib /ASSEMBLYRESOURCE:Debug\Prueba1.Form_EcuationSystem.resources /ASSEMBLYRESOURCE:Debug\Prueba1.Form_MatrixDeterminant.resources /ASSEMBLYRESOURCE:Debug\Prueba1.Form_MatrixInverse.resources /ASSEMBLYRESOURCE:Debug\Prueba1.Form_MatrixMultiplication.resources /ASSEMBLYRESOURCE:Debug\Prueba1.Form_MatrixScalar.resources /ASSEMBLYRESOURCE:Debug\Prueba1.Form_MatrixTranspose.resources /ASSEMBLYRESOURCE:Debug\Prueba1.Form_StartMenu.resources /ASSEMBLYRESOURCE:Debug\Prueba1.Form_MatrixSum.resources /MANIFEST /MANIFESTUAC:"level='asInvoker' uiAccess='false'" /manifest:embed /DEBUG /PDB:"C:\Users\Equipo1\Documents\Visual Studio 2013\Projects\Prueba1\Debug\Prueba1.pdb" /ASSEMBLYDEBUG /SUBSYSTEM:WINDOWS /TLBID:1 /ENTRY:"main" /DYNAMICBASE /FIXED:NO /NXCOMPAT /MACHINE:X86 Debug\Alg_InverseMatrix.obj
+         Debug\Alg_MatrixDeterminant.obj
          Debug\Alg_MatrixMultiplication.obj
          Debug\Alg_MatrixMultScalar.obj
          Debug\Alg_MatrixSum.obj
@@ -30,8 +58,8 @@
          Debug\Util_Vector.obj
          "Debug\.NETFramework,Version=v4.0.AssemblyAttributes.obj"
          Prueba1.vcxproj -> C:\Users\Equipo1\Documents\Visual Studio 2013\Projects\Prueba1\Debug\Prueba1.exe
-     1>Compilación del proyecto terminada "C:\Users\Equipo1\Documents\Visual Studio 2013\Projects\Prueba1\Prueba1\Prueba1.vcxproj" (Build destinos).
+     1>Compilación del proyecto terminada "C:\Users\Equipo1\Documents\Visual Studio 2013\Projects\Prueba1\Prueba1\Prueba1.vcxproj" (Rebuild destinos).
 
 Compilación correcta.
 
-Tiempo transcurrido 00:00:01.45
+Tiempo transcurrido 00:00:05.37

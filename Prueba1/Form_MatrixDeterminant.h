@@ -4,6 +4,7 @@
 #include "UI_MatrixFiller.h"
 #include "UI_MatrixReader.h"
 #include "UI_ClearMatrixContainer.h"
+#include "Alg_MatrixDeterminant.h"
 
 namespace Prueba1 {
 
@@ -52,12 +53,13 @@ namespace Prueba1 {
 	private: System::Windows::Forms::TextBox^  TxtMatrixDimension;
 	private: System::Windows::Forms::Label^  label4;
 	private: System::Windows::Forms::Label^  label3;
-	private: System::Windows::Forms::GroupBox^  ContainerMatrixResult;
+
 	private: System::Windows::Forms::Label^  label2;
 	private: System::Windows::Forms::GroupBox^  ContainerMatrix;
 	private: System::Windows::Forms::Button^  BtnCalculate;
 
 	private: int matrixDimension;
+	private: System::Windows::Forms::Label^  LabelDeterminant;
 
 	private:
 		/// <summary>
@@ -78,7 +80,7 @@ namespace Prueba1 {
 			this->TxtMatrixDimension = (gcnew System::Windows::Forms::TextBox());
 			this->label4 = (gcnew System::Windows::Forms::Label());
 			this->label3 = (gcnew System::Windows::Forms::Label());
-			this->ContainerMatrixResult = (gcnew System::Windows::Forms::GroupBox());
+			this->LabelDeterminant = (gcnew System::Windows::Forms::Label());
 			this->label2 = (gcnew System::Windows::Forms::Label());
 			this->ContainerMatrix = (gcnew System::Windows::Forms::GroupBox());
 			this->BtnCalculate = (gcnew System::Windows::Forms::Button());
@@ -139,20 +141,22 @@ namespace Prueba1 {
 			this->label3->AutoSize = true;
 			this->label3->Font = (gcnew System::Drawing::Font(L"Microsoft Sans Serif", 20.25F, System::Drawing::FontStyle::Regular, System::Drawing::GraphicsUnit::Point,
 				static_cast<System::Byte>(0)));
-			this->label3->Location = System::Drawing::Point(388, 215);
+			this->label3->Location = System::Drawing::Point(445, 215);
 			this->label3->Name = L"label3";
 			this->label3->Size = System::Drawing::Size(76, 31);
 			this->label3->TabIndex = 15;
 			this->label3->Text = L"|A| = ";
 			// 
-			// ContainerMatrixResult
+			// LabelDeterminant
 			// 
-			this->ContainerMatrixResult->Location = System::Drawing::Point(465, 134);
-			this->ContainerMatrixResult->Name = L"ContainerMatrixResult";
-			this->ContainerMatrixResult->Size = System::Drawing::Size(260, 174);
-			this->ContainerMatrixResult->TabIndex = 14;
-			this->ContainerMatrixResult->TabStop = false;
-			this->ContainerMatrixResult->Text = L"Matrix result";
+			this->LabelDeterminant->AutoSize = true;
+			this->LabelDeterminant->Font = (gcnew System::Drawing::Font(L"Microsoft Sans Serif", 20.25F, System::Drawing::FontStyle::Regular,
+				System::Drawing::GraphicsUnit::Point, static_cast<System::Byte>(0)));
+			this->LabelDeterminant->Location = System::Drawing::Point(514, 215);
+			this->LabelDeterminant->Name = L"LabelDeterminant";
+			this->LabelDeterminant->Size = System::Drawing::Size(84, 31);
+			this->LabelDeterminant->TabIndex = 0;
+			this->LabelDeterminant->Text = L"          ";
 			// 
 			// label2
 			// 
@@ -182,15 +186,16 @@ namespace Prueba1 {
 			this->BtnCalculate->TabIndex = 14;
 			this->BtnCalculate->Text = L"Calculate";
 			this->BtnCalculate->UseVisualStyleBackColor = true;
+			this->BtnCalculate->Click += gcnew System::EventHandler(this, &Form_MatrixDeterminant::BtnCalculate_Click);
 			// 
 			// Form_MatrixDeterminant
 			// 
 			this->AutoScaleDimensions = System::Drawing::SizeF(6, 13);
 			this->AutoScaleMode = System::Windows::Forms::AutoScaleMode::Font;
 			this->ClientSize = System::Drawing::Size(760, 378);
+			this->Controls->Add(this->LabelDeterminant);
 			this->Controls->Add(this->BtnCalculate);
 			this->Controls->Add(this->label3);
-			this->Controls->Add(this->ContainerMatrixResult);
 			this->Controls->Add(this->label2);
 			this->Controls->Add(this->ContainerMatrix);
 			this->Controls->Add(this->groupBox3);
@@ -209,7 +214,18 @@ namespace Prueba1 {
 				 matrixDimension = Convert::ToInt32(TxtMatrixDimension->Text);
 
 				 UI_matrixGenerator(matrixDimension, matrixDimension, "matrix", ContainerMatrix);
-				 UI_clearMatrixContainer(ContainerMatrixResult);
+				 LabelDeterminant->Text = L"   ";
+	}
+	private: System::Void BtnCalculate_Click(System::Object^  sender, System::EventArgs^  e) {
+				 t_matrix matrix = UI_matrixReader(matrixDimension, matrixDimension, "matrix", ContainerMatrix);
+
+				 LabelDeterminant->Text = "tugfa";
+				 t_matrix_value determinant = Alg_matrixDeterminant(matrix, matrixDimension);
+				 LabelDeterminant->Text = "tugfa xdxdxdxd";
+
+				 String^ determinantToPrint = determinant + "";
+
+				 LabelDeterminant->Text = determinantToPrint;
 	}
 };
 }

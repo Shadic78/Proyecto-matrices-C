@@ -77,6 +77,7 @@
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="Alg_InverseMatrix.cpp" />
+    <ClCompile Include="Alg_MatrixDeterminant.cpp" />
     <ClCompile Include="Alg_MatrixMultiplication.cpp" />
     <ClCompile Include="Alg_MatrixMultScalar.cpp" />
     <ClCompile Include="Alg_MatrixSum.cpp" />
@@ -115,6 +116,7 @@
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="Alg_InverseMatrix.h" />
+    <ClInclude Include="Alg_MatrixDeterminant.h" />
     <ClInclude Include="Alg_MatrixMultiplication.h" />
     <ClInclude Include="Alg_MatrixMultScalar.h" />
     <ClInclude Include="Alg_MatrixSum.h" />
