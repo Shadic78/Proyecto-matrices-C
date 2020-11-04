@@ -1,24 +1,9 @@
 #include "Alg_Determinant.h"
 #include <cmath>
 
-t_matrix_value determinant(t_matrix matrixA, t_matrix_value matrixOrder, int matrixNumRows, int matrixNumCol){
-    int determinantValue = 0;
-    if(matrixOrder==1){
-        determinantValue = matrix[0][0];
-    }else{
 
-        for(int colIndex=0; colIndex<matrixOrder; colIndex++){
-            determinantValue = determinantValue + matrixOrder[0][colIndex]
-                    * matrixCofactor(matrix, matrixOrder, 0, colIndex, int matrixNumRows, int matrixNumCol);
-
-        }
-    }
-
-    return determinantValue;
-}
-
-int cofactor(t_matrix matrixA, t_matrix_value matrixOrder, int row, int column, int matrixNumRows, int matrixNumCol){
-   t_matrix_value matrixB = createMatrix( matrixNumRows, matrixNumCol);
+int matrixCofactor(t_matrix matrixA, t_matrix_value matrixOrder, int row, int column, int matrixNumRows, int matrixNumCol){
+    t_matrix_value matrixB = createMatrix(matrixNumRows, matrixNumCol);
     int pivot = matrixOrder - 1;
     int rowIndexB;
     int colIndexB;
@@ -38,4 +23,18 @@ int cofactor(t_matrix matrixA, t_matrix_value matrixOrder, int row, int column, 
 
     return pow(-1.0, row+ column*determinant(matrixB, pivot));
 
+}
+
+t_matrix_value determinant(t_matrix matrixA, t_matrix_value matrixOrder, int matrixNumRows, int matrixNumCol){
+    int determinantValue = 0;
+    if(matrixOrder==1){
+        determinantValue = matrix[0][0];
+    }else{
+        for(int colIndex=0; colIndex<matrixOrder; colIndex++){
+            determinantValue = determinantValue + matrixOrder[0][colIndex] * matrixCofactor(matrixA, matrixOrder, 0, colIndex, matrixNumRows, matrixNumCol);
+
+        }
+    }
+
+    return determinantValue;
 }
