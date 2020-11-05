@@ -6,7 +6,10 @@ t_matrix eliminateRowAndCol(int rowToEliminate, int colToEliminate, t_matrix ori
 t_matrix_value Alg_matrixDeterminant(t_matrix matrix, int matrixDimension) {
 	int determinant = 0;
 
-	if (matrixDimension == 2) {
+	if (matrixDimension == 1) {
+		determinant = matrix[0][0];
+	}
+	else if (matrixDimension == 2) {
 		determinant = (matrix[0][0] * matrix[1][1]) - (matrix[0][1] * matrix[1][0]);
 	}
 	else {

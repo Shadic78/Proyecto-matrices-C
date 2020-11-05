@@ -1,4 +1,4 @@
-﻿Compilación iniciada a las 03/11/2020 07:27:16 p. m..
+﻿Compilación iniciada a las 03/11/2020 08:14:17 p. m..
      1>Proyecto "C:\Users\Equipo1\Documents\Visual Studio 2013\Projects\Prueba1\Prueba1\Prueba1.vcxproj" en el nodo 2 (Rebuild destinos).
      1>C:\Program Files (x86)\MSBuild\Microsoft.Cpp\v4.0\V120\Microsoft.CppBuild.targets(381,5): warning MSB8028: The intermediate directory (Debug\) contains files shared from another project (ProyectoMatrices.vcxproj).  This can lead to incorrect clean and rebuild behavior.
      1>ClCompile:
@@ -6,7 +6,8 @@
          Alg_InverseMatrix.cpp
          Alg_MatrixDeterminant.cpp
      1>Alg_MatrixDeterminant.cpp(10): warning C4244: '=' : conversión de 't_matrix_value' a 'int'; posible pérdida de datos
-     1>Alg_MatrixDeterminant.cpp(18): warning C4244: '+=' : conversión de 't_matrix_value' a 'int'; posible pérdida de datos
+     1>Alg_MatrixDeterminant.cpp(13): warning C4244: '=' : conversión de 't_matrix_value' a 'int'; posible pérdida de datos
+     1>Alg_MatrixDeterminant.cpp(21): warning C4244: '+=' : conversión de 't_matrix_value' a 'int'; posible pérdida de datos
          Alg_MatrixMultiplication.cpp
          Alg_MatrixMultScalar.cpp
          Alg_MatrixSum.cpp
@@ -62,4 +63,4 @@
 
 Compilación correcta.
 
-Tiempo transcurrido 00:00:05.37
+Tiempo transcurrido 00:00:05.34
